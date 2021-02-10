@@ -76,7 +76,7 @@ li > a {
 }
 
 hr {
-    background-color: grey;
+    background-color: darkgrey;
 }
 
 #search_IMDb {
@@ -89,4 +89,91 @@ hr {
 
 #search-All {
     color: #F5C518;
+}
+
+main {
+    width: 85%;
+    margin: auto;
+}
+
+#carouselExampleDark {
+    width: 60%;
+}
+
+h2 {
+    color: white;
+}
+
+#modal {
+    background-color: #121212;
+    width: 100%;
+    padding: 20px 250px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    color: white;
+    display: none;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+#logo_IMDb2 {
+    width: 110px;
+}
+
+#closeModal {
+    color: #121212;
+    background-color: #F5C518;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    margin-left: 85%;
+}
+
+#top > button:hover {
+    background-color: #DDAF17;
+}
+
+div.genre > a {
+    width: 100%;
+    margin-left: 30px;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+}
+
+#column1, #column2, #column3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.orange {
+    color: #F5C518;
+}
+
+.genre > a:hover {
+    background-color: #121212;
+    text-decoration: underline white;
+}
+
+.genre {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
 }
