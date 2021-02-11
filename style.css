@@ -28,6 +28,28 @@ header {
     padding: 0 130px;
 }
 
+footer{
+    width: 100%;
+    padding: 20px 350px ;
+    font-size: 15px;
+    align-items: center;
+}
+
+main {
+    width: 85%;
+    margin: auto;
+}
+
+.filmsNext > a, .flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
 #logo_IMDb {
     width: 70px;
 }
@@ -38,7 +60,6 @@ a {
     display: inline-flex;
     padding: 4px 4px;
     width: 10%;
-    text-align: center;
 }
 
 a:hover {
@@ -96,11 +117,6 @@ hr {
     color: #F5C518;
 }
 
-main {
-    width: 85%;
-    margin: auto;
-}
-
 #carouselExampleDark {
     margin: 20px;
     width: 70%;
@@ -146,8 +162,9 @@ h2 {
     margin-left: 85%;
 }
 
-#top > button:hover {
+#top > button:hover, a.buttonOrange:hover {
     background-color: #DDAF17;
+    color: #121212;
 }
 
 #top > a:hover {
@@ -160,8 +177,6 @@ div.genre > a {
 }
 
 #column1, #column2, #column3{
-    display: flex;
-    flex-direction: column;
     width: 100%;
     margin-top: 20px;
 }
@@ -184,16 +199,6 @@ h2 {
     margin: 20px 50px;
 }
 
-.genre, #containerNextFilm, footer {
-    display: flex;
-    flex-direction: column;
-}
-
-#row, #upNext, .filmsNext, #top, .row, #whatToWatch  {
-    display: flex;
-    flex-direction: row;
-}
-
 h3, h5 {
     color: #555555;
 }
@@ -208,15 +213,12 @@ h3, h5 {
 }
 
 .filmsNext > a {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     font-size: 15px;
     color: grey;
 }
 
-.filmsNext > a:hover {
-    background-color: #121212;
+a.films:hover {
+    background-color: transparent;
 }
 
 .filmsNext > img {
@@ -224,24 +226,17 @@ h3, h5 {
     margin: 10px;
 }
 
-a:hover .fa-play-circle {
+a.films:hover i {
     color: #F5C518;
 }
 
-.films > .fa-play-circle {
-    font-size: 30px;
+a.films > i, a.films > div > i {
+    font-size: 25px;
     color: white;
 }
 
 h1 {
     margin-top: 20px;
-}
-
-footer{
-    width: 100%;
-    padding: 20px 350px ;
-    font-size: 15px;
-    align-items: center;
 }
 
 .row > a.socialNetwork > i {
@@ -265,10 +260,6 @@ a.socialNetwork:hover {
     text-decoration: none;
 }
 
-.row > a {
-    width: auto;
-}
-
 .row {
     flex-wrap: wrap;
 }
@@ -282,8 +273,11 @@ a.socialNetwork:hover {
     font-size: 13px;
 }
 
-.buttonOrange {
+.buttonOrange, .row > a, a.films  {
     width: auto;
+}
+
+.buttonOrange {
     padding: 5px 80px;
     margin: auto;
     margin-top: 20px;
@@ -291,3 +285,24 @@ a.socialNetwork:hover {
     border-radius: 5px 5px;
 }
 
+.borderLeft {
+    border-right: 4px solid #F5C518;
+}
+
+.colorGrey {
+    color: grey;
+}
+
+p, .size15 {
+    font-size: 15px;
+}
+
+.linkBlue {
+    color: blue;
+}
+
+.linkBlue:hover {
+    color: blue;
+    text-decoration: underline blue;
+    background-color: transparent;
+}
