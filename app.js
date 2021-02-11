@@ -75,3 +75,29 @@ for (let i = 0; i < community.length; i++) {
     link.href = "#";
     titleCommunity.appendChild(link);
 }
+
+
+// Top picks, utiliser Jquery
+let filmsTopPicks = [
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.iBhfFDxIeeXX6rTHxpWiJgHaLH&pid=Api&P=0&w=300&h=300", "star" : 8.1, "title" : "Thor Ragnarok"},
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.nbiKC4SfvhE7v_TwIbH4RgHaK-&pid=Api&P=0&w=300&h=300", "star" : 8.0, "title" : "WandaVison"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.HmpvO2p1w1sVQQREs2BDLwHaLH&pid=Api&P=0&w=300&h=300", "star" : 8.0, "title" : "Guardians of the Galaxy"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.RAxOsPPR7Yj9deu4JOK7HQHaK-&pid=Api&P=0&w=300&h=300", "star" : 7.6, "title": "Guardians of the Galaxie vol. 2"}
+];
+
+function createFilmsTopPicks (i) {
+    $("#containerTopPicks").append(
+        "<div id='filmTopPick" + [i] + "' class='flexColumn backFilm'>" +
+            "<a href='#'><img class='imageFilmTopPicks' src='"+ filmsTopPicks[i].imageSrc +"'></a>" +
+        "<span><i class='fas fa-star orange'></i>" + filmsTopPicks[i].star + "</span>" +
+            "<a href='#' class='title'>" + filmsTopPicks[i].title + "</a>" +
+            "<a href='#' class='watchList' id='filmWatchList" + [i] + "'><i class=\"fas fa-plus\"></i> Watchlist</a> "+
+        "</div>"
+    );
+}
+
+createFilmsTopPicks(0);
+createFilmsTopPicks(1);
+createFilmsTopPicks(2);
+createFilmsTopPicks(3);
+

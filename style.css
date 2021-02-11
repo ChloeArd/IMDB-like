@@ -127,10 +127,6 @@ hr {
     height: 500px;
 }
 
-h2 {
-    color: white;
-}
-
 #modal {
     background-color: #121212;
     width: 100%;
@@ -236,7 +232,7 @@ a.films > i, a.films > div > i {
 }
 
 h1 {
-    margin-top: 20px;
+    margin: 50px 0;
 }
 
 .row > a.socialNetwork > i {
@@ -247,12 +243,12 @@ h1 {
     height: 50px;
 }
 
-.row > a:hover {
+.row > a:hover, a.title:hover {
     text-decoration: underline white;
     background-color: black;
 }
 
-.row > a.socialNetwork > i:hover {
+a.socialNetwork > i:hover {
     background-color: #121212;
 }
 
@@ -285,8 +281,37 @@ a.socialNetwork:hover {
     border-radius: 5px 5px;
 }
 
+.buttonBlack {
+    padding: 5px 80px;
+    margin: 0 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 5px 5px;
+    border: 2px solid white;
+    width: auto;
+}
+
+.buttonRadius {
+    padding: 5px 10px;
+    margin: 0 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 20px 20px;
+    border: 2px solid white;
+    width: auto;
+}
+
 .borderLeft {
     border-right: 4px solid #F5C518;
+    margin-right: 15px;
+    border-radius: 5px 5px;
+}
+
+.borderBottom {
+    border-bottom: 4px solid #F5C518;
+    width: 130px;
+    margin: 15px 0;
+    border-radius: 5px 5px;
 }
 
 .colorGrey {
@@ -294,15 +319,49 @@ a.socialNetwork:hover {
 }
 
 p, .size15 {
-    font-size: 15px;
+    font-size: 10px;
 }
 
-.linkBlue {
+.linkBlue, .watchList {
     color: blue;
+}
+
+.watchList {
+    background-color: #252525;
 }
 
 .linkBlue:hover {
     color: blue;
     text-decoration: underline blue;
     background-color: transparent;
+}
+
+.backFilm {
+    background-color: #121212;
+    margin: 10px 10px;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.backFilm > a, .imageFilmTopPicks  {
+    width: 170px
+}
+
+#ajoutList {
+    margin: auto;
+    align-items: center;
+}
+
+#ajoutList > i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.colorWhite {
+    color: white;
+}
+
+#clear {
+    margin-left: 75%;
+    font-size: 15px;
 }
