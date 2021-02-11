@@ -13,6 +13,7 @@ html {
 body {
     width: 100%;
     background-color: black;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -47,6 +48,10 @@ a:hover {
 }
 
 i {
+    margin: 0 8px;
+}
+
+li > a > i {
     color: #555555;
     margin: 0 8px;
 }
@@ -97,7 +102,13 @@ main {
 }
 
 #carouselExampleDark {
-    width: 60%;
+    margin: 20px;
+    width: 70%;
+    height: 500px;
+}
+
+.d-block {
+    height: 500px;
 }
 
 h2 {
@@ -121,9 +132,12 @@ h2 {
     width: 110px;
 }
 
-#closeModal {
+#closeModal, .buttonOrange {
     color: #121212;
     background-color: #F5C518;
+}
+
+#closeModal {
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -136,14 +150,13 @@ h2 {
     background-color: #DDAF17;
 }
 
+#top > a:hover {
+    background-color: #121212;
+}
+
 div.genre > a {
     width: 100%;
     margin-left: 30px;
-}
-
-#top {
-    display: flex;
-    flex-direction: row;
 }
 
 #column1, #column2, #column3{
@@ -168,12 +181,113 @@ h2 {
 }
 
 .genre {
-    display: flex;
-    flex-direction: column;
     margin: 20px 50px;
 }
 
-#row {
+.genre, #containerNextFilm, footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#row, #upNext, .filmsNext, #top, .row, #whatToWatch  {
     display: flex;
     flex-direction: row;
 }
+
+h3, h5 {
+    color: #555555;
+}
+
+#nextFilm {
+    margin-top: 20px;
+    width: 28%;
+}
+
+#containerNextFilm {
+    background-color: #121212;
+}
+
+.filmsNext > a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: grey;
+}
+
+.filmsNext > a:hover {
+    background-color: #121212;
+}
+
+.filmsNext > img {
+    width: 90px;
+    margin: 10px;
+}
+
+a:hover .fa-play-circle {
+    color: #F5C518;
+}
+
+.films > .fa-play-circle {
+    font-size: 30px;
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+footer{
+    width: 100%;
+    padding: 20px 350px ;
+    font-size: 15px;
+    align-items: center;
+}
+
+.row > a.socialNetwork > i {
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.row > a:hover {
+    text-decoration: underline white;
+    background-color: black;
+}
+
+.row > a.socialNetwork > i:hover {
+    background-color: #121212;
+}
+
+a.socialNetwork:hover {
+    text-decoration: none;
+}
+
+.row > a {
+    width: auto;
+}
+
+.row {
+    flex-wrap: wrap;
+}
+
+#amazon {
+    margin-top: 20px;
+}
+
+#end {
+    color: #555555;
+    font-size: 13px;
+}
+
+.buttonOrange {
+    width: auto;
+    padding: 5px 80px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 5px 5px;
+}
+
