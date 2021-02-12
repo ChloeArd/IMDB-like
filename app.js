@@ -170,3 +170,43 @@ createChronologyFilm(20);
 createChronologyFilm(21);
 createChronologyFilm(22);
 createChronologyFilm(23);
+
+
+let chronologyXmen = [
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.RwsWbtBY6uBQS1cSr0be-AAAAA&pid=Api&P=0&w=300&h=300", "title" : "X-Men : First Class  (2011)"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.GFs4y9mVHkBcpwXuuLa7bAHaJ6&pid=Api&P=0&w=300&h=300", "title" : "X-Men Origins : Wolverine (2009)"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.k8cFs3SoqaJ1_1sxrw7HhQHaLH&pid=Api&P=0&w=300&h=300", "title" : "X-Men (2000)"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.6bPlQ1-_GdnkzyPe8XiVwQHaLH&pid=Api&P=0&w=300&h=300", "title" : "X-Men 2 (2003)"},
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.C875m7convYZR5L1-UMFegHaKj&pid=Api&P=0&w=300&h=300", "title" : "X-Men : The last stand (2006)"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.w3DYONspOd7QVqdWEAMZmQHaKj&pid=Api&P=0&w=300&h=300", "title" : "The Wolverine (2013)"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.I4wpWLxu2P-jep1I4Th8KwHaJ3&pid=Api&P=0&w=300&h=300", "title" : "X-Men : Days of Future Past (2014)"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.H4Gc8G4mlyjj5xJagqITjQHaKj&pid=Api&P=0&w=300&h=300", "title" : "X-Men : Apocalypse (2016)"},
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.ng61IWqtUV9bxuw7P78QJwAAAA&pid=Api&P=0&w=300&h=300", "title" : "Deadpool (2016)"},
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.ND-EK9l01qVW9PuV5u4eDAHaK8&pid=Api&P=0&w=300&h=300", "title" : "Deadpool 2 (2018)"},
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.i6PaHWEJYYMxYhpunHVGXgHaKz&pid=Api&P=0&w=300&h=300", "title" : "X-Men : Dark Phoenix (2019)"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.lao4-o4Si6QeTRnDrYtbHQAAAA&pid=Api&P=0&w=300&h=300", "title" : "The New Mutants (2020)"},
+];
+
+function createChronologyXmen (i) {
+    let number = i + 1;
+    $("#containerXmen").append(
+        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
+        "<a href='#'><img class='imageFilmTopPicks' src='"+ chronologyXmen[i].imageSrc +"'></a>" +
+        "<span class='number'>" + number + "</span>" +
+        "<a href='#' class='title'>" + chronologyXmen[i].title + "</a>" +
+        "</div>"
+    );
+}
+
+createChronologyXmen(0);
+createChronologyXmen(1);
+createChronologyXmen(2);
+createChronologyXmen(3);
+createChronologyXmen(4);
+createChronologyXmen(5);
+createChronologyXmen(6);
+createChronologyXmen(7);
+createChronologyXmen(8);
+createChronologyXmen(9);
+createChronologyXmen(10);
+createChronologyXmen(11);
