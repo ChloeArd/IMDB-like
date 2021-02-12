@@ -93,7 +93,7 @@ function createFilmsTopPicks (i) {
             "<a href='#'><img class='imageFilmTopPicks' src='"+ filmsTopPicks[i].imageSrc +"'></a>" +
             "<span><i class='fas fa-star red'></i>" + filmsTopPicks[i].star + "</span>" +
             "<a href='#' class='title'>" + filmsTopPicks[i].title + "</a>" +
-            "<a href='#' class='watchList' id='filmWatchList" + [i] + "'><i class=\"fas fa-plus\"></i> Watchlist</a> "+
+            "<a href='#' class='watchList' id='filmWatchList" + [i] + "'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
         "</div>"
     );
 }
@@ -210,3 +210,67 @@ createChronologyXmen(8);
 createChronologyXmen(9);
 createChronologyXmen(10);
 createChronologyXmen(11);
+
+// Fantastic 4
+let chronologyFantastic = [
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.Drn_VEdXvdUODGbt-l8xtAHaKS&pid=Api&P=0&w=300&h=300", "title" : "Fantastic Four (2005)"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.a1AlFPwO9r0MZpDPxLNoKgHaJ4&pid=Api&P=0&w=300&h=300", "title" : "Fantastic Four: Rise of the Silver Surfer (2007)"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.SMF6w_BkUX1fy682L9WGrgHaLK&pid=Api&P=0&w=300&h=300", "title" : "Fantastic Four (2015)"},
+];
+
+function createChronologyFantastic (i) {
+    let number = i + 1;
+    $("#containerFantastic").append(
+        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
+        "<a href='#'><img class='imageFilmTopPicks' src='"+ chronologyFantastic[i].imageSrc +"'></a>" +
+        "<span class='number'>" + number + "</span>" +
+        "<a href='#' class='title'>" + chronologyFantastic[i].title + "</a>" +
+        "</div>"
+    );
+}
+
+createChronologyFantastic(0);
+createChronologyFantastic(1);
+createChronologyFantastic(2);
+
+// Spider-Man
+let chronologySpiderMan = [
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.WGmqRf_FKqAq3VSXVY1P3AHaKO&pid=Api&P=0&w=300&h=300", "title" : "Spider-Man (2002)"},
+    {"imageSrc" : "https://tse4.explicit.bing.net/th?id=OIP.oGCjs7nkXo863j9jAMhe0wHaLG&pid=Api&P=0&w=300&h=300", "title" : "Spider-Man 2 (2004)"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.E9cK3MLj_0FbnltKBT1hwQHaLH&pid=Api&P=0&w=300&h=300", "title" : "Spider-Man 3 (2007)"},
+];
+
+function createChronologySpiderMan (i) {
+    let number = i + 1;
+    $("#containerSpiderMan").append(
+        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
+        "<a href='#'><img class='imageFilmTopPicks' src='"+ chronologySpiderMan[i].imageSrc +"'></a>" +
+        "<span class='number'>" + number + "</span>" +
+        "<a href='#' class='title'>" + chronologySpiderMan[i].title + "</a>" +
+        "</div>"
+    );
+}
+
+createChronologySpiderMan(0);
+createChronologySpiderMan(1);
+createChronologySpiderMan(2);
+
+// The amazing Spider-Man
+let chronologyAmazingSpiderMan = [
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.Qo4WPu_E2nZJdm5AKqHGMgHaKd&pid=Api&P=0&w=300&h=300", "title" : "The Amazing Spider-Man (2012)"},
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.aCchXBFu_g7hrD_35DnbNQHaLG&pid=Api&P=0&w=300&h=300", "title" : "The Amazing Spider-Man 2 (2014)"}
+];
+
+function createChronologyAmazingSpiderMan (i) {
+    let number = i + 1;
+    $("#containerAmazingSpiderMan").append(
+        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
+        "<a href='#'><img class='imageFilmTopPicks' src='"+ chronologyAmazingSpiderMan[i].imageSrc +"'></a>" +
+        "<span class='number'>" + number + "</span>" +
+        "<a href='#' class='title'>" + chronologyAmazingSpiderMan[i].title + "</a>" +
+        "</div>"
+    );
+}
+
+createChronologyAmazingSpiderMan(0);
+createChronologyAmazingSpiderMan(1);
