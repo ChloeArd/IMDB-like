@@ -37,7 +37,7 @@ footer{
 }
 
 main {
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
@@ -114,10 +114,6 @@ hr {
     margin: 0 10px;
 }
 
-#search-All {
-    color: #F5C518;
-}
-
 #carouselExampleDark {
     margin: 20px;
     width: 70%;
@@ -147,7 +143,7 @@ hr {
 
 #closeModal, .buttonOrange {
     color: #121212;
-    background-color: #F5C518;
+    background-color: #E62A04;
 }
 
 #closeModal {
@@ -159,8 +155,8 @@ hr {
     margin-left: 85%;
 }
 
-#top > button:hover, a.buttonOrange:hover {
-    background-color: #DDAF17;
+#top > button:hover {
+    background-color: #C82B0B;
     color: #121212;
 }
 
@@ -183,8 +179,8 @@ h2 {
     font-size: 20px;
 }
 
-.orange {
-    color: #F5C518;
+.red, #search-All  {
+    color: #E62A04;
 }
 
 .genre > a:hover {
@@ -224,7 +220,7 @@ a.films:hover {
 }
 
 a.films:hover i {
-    color: #F5C518;
+    color: #E62A04;
 }
 
 a.films > i, a.films > div > i {
@@ -237,10 +233,13 @@ h1 {
 }
 
 .row > a.socialNetwork > i {
-    color: white;
     font-size: 25px;
+    display: flex;
     border-radius: 50%;
     width: 50px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
     height: 50px;
 }
 
@@ -270,16 +269,21 @@ a.socialNetwork:hover {
     font-size: 13px;
 }
 
-.buttonOrange, .row > a, a.films  {
+.buttonRed, .row > a, a.films, #browseTrailers  {
     width: auto;
 }
 
-.buttonOrange {
+.buttonRed {
     padding: 5px 80px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 15px;
     border-radius: 5px 5px;
+    background-color: #E62A04;
+}
+
+a.buttonRed:hover {
+    background-color: #C82B0B;
 }
 
 .buttonBlack {
@@ -303,13 +307,13 @@ a.socialNetwork:hover {
 }
 
 .borderLeft {
-    border-right: 4px solid #F5C518;
+    border-right: 4px solid #E62A04;
     margin-right: 15px;
     border-radius: 5px 5px;
 }
 
 .borderBottom {
-    border-bottom: 4px solid #F5C518;
+    border-bottom: 4px solid #E62A04;
     width: 130px;
     margin: 15px 0;
     border-radius: 5px 5px;
@@ -319,12 +323,13 @@ a.socialNetwork:hover {
     color: grey;
 }
 
-p, .size15 {
+p {
     font-size: 10px;
 }
 
 .linkBlue, .watchList {
     color: blue;
+    font-size: 15px;
 }
 
 .watchList {
@@ -342,10 +347,15 @@ p, .size15 {
     margin: 10px 10px;
     font-size: 15px;
     padding-bottom: 15px;
+    width: 15%;
 }
 
 .backFilm > a, .imageFilmTopPicks  {
-    width: 170px
+    width: 100%;
+}
+
+.imageFilmTopPicks {
+    height: 300px;
 }
 
 #ajoutList {
@@ -364,5 +374,23 @@ p, .size15 {
 
 #clear {
     margin-left: 75%;
-    font-size: 15px;
+}
+
+.hoverRed:hover, .hoverRed:hover i {
+    color: #E62A04;
+    background-color: transparent;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E62A04;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#containerChronology {
+    flex-wrap: wrap;
 }

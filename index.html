@@ -10,12 +10,12 @@
 <body>
 
     <header>
-        <a href="index.html"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/809010299822276688/bni.PNG" alt="logo IMDb"></a>
+        <a href="index.html"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/809713088836010004/imdbMarvel2.PNG" alt="logo IMDb"></a>
         <a href="#" id="menu"><i class="fas fa-bars"></i>Menu</a>
         <div id="inputs" class="input-group mb-3">
             <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
             <ul id="menuDeroulant" class="dropdown-menu">
-                <li><a id="search-All" href="#"><i class="fas fa-search"></i>All</a></li>
+                <li><a id="search-All" href="#"><i class="fas fa-search red"></i>All</a></li>
                 <li><a href="#"><i class="fas fa-film"></i> Titles</a></li>
                 <li><a  href="#"><i class="fas fa-tv"></i> TV Episodes</a></li>
                 <li><a href="#"><i class="fas fa-user-friends"></i> Celebs</a></li>
@@ -35,35 +35,35 @@
     <!-- Fenetre modale -->
     <div id="modal">
         <div id="top" class="flexRow">
-            <a href="index.html"><img id="logo_IMDb2" src="https://cdn.discordapp.com/attachments/689017273050202134/809010299822276688/bni.PNG" alt="logo IMDb"></a>
+            <a href="index.html"><img id="logo_IMDb2" src="https://cdn.discordapp.com/attachments/689017273050202134/809713088836010004/imdbMarvel2.PNG" alt="logo IMDb"></a>
             <button id="closeModal"><i class="fas fa-times"></i></button>
         </div>
 
         <div id="row" class="flexRow">
             <div id="column1" class="flexColumn">
                 <div class="genre flexColumn" id="movies">
-                    <h2><i class="fas fa-film orange"></i>Movies</h2>
+                    <h2><i class="fas fa-film red"></i>Movies</h2>
                 </div>
                 <div class="genre flexColumn" id="celebs">
-                    <h2><i class="fas fa-user-friends orange"></i>Celebs</h2>
+                    <h2><i class="fas fa-user-friends red"></i>Celebs</h2>
                 </div>
             </div>
 
             <div id="column2" class="flexColumn">
                 <div class="genre flexColumn" id="TVShows">
-                    <h2><i class="fas fa-tv orange"></i>TV Shows</h2>
+                    <h2><i class="fas fa-tv red"></i>TV Shows</h2>
                 </div>
                 <div class="genre flexColumn" id="watch">
-                    <h2><i class="fas fa-play-circle orange"></i>Watch</h2>
+                    <h2><i class="fas fa-play-circle red"></i>Watch</h2>
                 </div>
             </div>
 
             <div id="column3" class="flexColumn">
                 <div class="genre flexColumn" id="awardsEvents">
-                    <h2><i class="far fa-star orange"></i>Awards & Events</h2>
+                    <h2><i class="far fa-star red"></i>Awards & Events</h2>
                 </div>
                 <div class="genre flexColumn" id="community">
-                    <h2><i class="fas fa-globe-europe orange"></i>Community</h2>
+                    <h2><i class="fas fa-globe-europe red"></i>Community</h2>
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
             </div>
 
             <div id="nextFilm">
-                <h3 class="orange">Up next</h3>
+                <h3 class="red">Up next</h3>
                 <div id="containerNextFilm" class="flexColumn">
                     <div class="filmsNext flexRow">
                         <img src="https://tse3.mm.bing.net/th?id=OIP.YqOqbxWhqjcR21YLa3AkwAHaK-&pid=Api&P=0&w=300&h=300" alt="Film Ant-Man">
@@ -158,18 +158,19 @@
                             <p>Action, Science fiction</p>
                         </a>
                     </div>
-
                 </div>
+                <a id="browseTrailers" class="hoverRed" href="#"><h2>Browse trailers <i class="fas fa-chevron-right"></i></h2></a>
+
             </div>
         </div>
 
         <div id="featuredToday">
-            <h1 class="orange">Featured today</h1>
+            <h1 class="red">Featured today</h1>
         </div>
 
         <div id="whatToWatch" class="flexRow">
-            <h1 class="orange">What to watch</h1>
-            <a class="buttonOrange" href="#"> Browse our What to Watch page > </a>
+            <h1 class="red">What to watch</h1>
+            <a class="buttonRed" href="#"> Browse our What to Watch page > </a>
         </div>
 
         <div id="topPicks" class="flexColumn">
@@ -200,21 +201,23 @@
                 <i class="fas fa-plus-circle"></i>
                 <h3 class="colorWhite">Sign in to access your Watchlist</h3>
                 <h4 class="colorGrey"> Save shows and movies to keep track of what you want to watch</h4>
-                <a class="buttonOrange" href="#"> Sign in to IMDb > </a>
+                <a class="buttonRed" href="#"> Sign in to IMDb > </a>
             </div>
         </div>
 
-        <div id="fanFavorites" class="flexColumn">
+        <div id="chronologyFilmMarvel" class="flexColumn">
             <a href="#" class="films flexColumn" >
                 <div class="flexRow">
                     <div class="borderLeft"></div>
-                    <h2>Fan favorites </h2>
+                    <h2>Marvel Movies timeline </h2>
                     <i class="fas fa-chevron-right"></i>
                 </div>
-                <div>
-                    <h4 class="colorGrey">This week's top TV and movies</h4>
-                </div>
             </a>
+            <h4 class="colorGrey">Chronological order for watching Marvel movies (no release date)</h4>
+
+            <div id="containerChronology" class="flexRow">
+
+            </div>
         </div>
 
         <div id="moreToWatch" class="flexColumn">
@@ -229,7 +232,7 @@
             </div>
         </div>
 
-        <h1 class="orange">Exclusives videos</h1>
+        <h1 class="red">Exclusives videos</h1>
 
         <div id="imdbOriginals" class="flexColumn">
             <div class="flexRow">
@@ -239,7 +242,7 @@
             <h4 class="colorGrey"> Celebrity interviews, trending entertainment stories, and expert analysis</h4>
         </div>
 
-        <h1 class="orange"> Explore what's streaming</h1>
+        <h1 class="red"> Explore what's streaming</h1>
 
         <div id="primeVideo" class="flexColumn">
                 <h3 class="colorWhite">PRIME VIDEO </h3>
@@ -249,7 +252,7 @@
             <!-- ajouter contenue -->
         </div>
 
-        <h1 id="Explore" class="orange">Explore movies & TV shows</h1>
+        <h1 id="Explore" class="red">Explore movies & TV shows</h1>
 
         <div id="topBox" class="flexColumn">
             <a href="#" class="films flexColumn" >
@@ -273,27 +276,13 @@
             <h4 class="colorGrey">Trailers for upcoming releases</h4>
         </div>
 
-        <h1 class="orange"> Mor to explore</h1>
+        <h1 class="red"> Mor to explore</h1>
 
         <div id="editor" class="flexColumn">
             <div class="flexRow">
                 <div class="borderLeft"></div>
                 <h2> Editor's picks </h2>
             </div>
-        </div>
-
-        <div id="bornToday" class="flexColumn">
-            <a href="#" class="films flexColumn" >
-                <div class="flexRow">
-                    <div class="borderLeft"></div>
-                    <h2>Born today </h2>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div>
-                    <h4 class="colorGrey"> People born on .... (a faire en js)!!!!!!!!!!!!!!!!!!!!!!!!</h4>
-                </div>
-            </a>
-            <!-- completer .... -->
         </div>
 
         <div id="topNews" class="flexColumn">
@@ -329,11 +318,11 @@
 
     <footer class="flexColumn">
         <div class="row flexRow">
-            <a class="socialNetwork" href=""><i class="fab fa-facebook"></i></a>
-            <a class="socialNetwork" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="socialNetwork" href="#"><i class="fab fa-twitch"></i></a>
-            <a class="socialNetwork" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="socialNetwork" href="#"><i class="fab fa-youtube"></i></a>
+            <a class="socialNetwork red" href=""><i class="fab fa-facebook"></i></a>
+            <a class="socialNetwork red" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="socialNetwork red" href="#"><i class="fab fa-twitch"></i></a>
+            <a class="socialNetwork red" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="socialNetwork red" href="#"><i class="fab fa-youtube"></i></a>
         </div>
         <div class="row flexRow">
             <a href="#">Get the IMDb App <i class="fas fa-share-square"></i></a>
