@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <a href="index.html"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/809713088836010004/imdbMarvel2.PNG" alt="logo IMDb"></a>
+        <a href="index.html"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/810850072875106324/imdbMarvel-removebg-preview.png" alt="logo IMDb"></a>
         <a href="#" id="menu"><i class="fas fa-bars"></i>Menu</a>
         <div id="inputs" class="input-group mb-3">
             <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
@@ -35,7 +35,7 @@
     <!-- Fenetre modale -->
     <div id="modal">
         <div id="top" class="flexRow">
-            <a href="index.html"><img id="logo_IMDb2" src="https://cdn.discordapp.com/attachments/689017273050202134/809713088836010004/imdbMarvel2.PNG" alt="logo IMDb"></a>
+            <a href="index.html"><img id="logo_IMDb2" src="https://cdn.discordapp.com/attachments/689017273050202134/810850072875106324/imdbMarvel-removebg-preview.png" alt="logo IMDb"></a>
             <button id="closeModal"><i class="fas fa-times"></i></button>
         </div>
 
@@ -170,7 +170,7 @@
         </div>
 
         <div id="topPicks" class="flexColumn">
-            <a href="#" class="films flexColumn titleMargin" >
+            <a class="films flexColumn titleMargin" id="topPicks1">
                 <div class="flexRow">
                     <div class="borderLeft"></div>
                     <h2>Top Picks </h2>
@@ -204,7 +204,7 @@
         <h1 class="red">Marvel Categories</h1>
 
         <div id="chronologyFilmMarvel" class="flexColumn">
-            <a href="#" class="films flexColumn titleMargin" >
+            <a class="films flexColumn titleMargin" id="avengers" >
                 <div class="flexRow">
                     <div class="borderLeft"></div>
                     <h2>Avengers</h2>
@@ -219,7 +219,7 @@
         </div>
 
         <div id="chronologyFilmXmen" class="flexColumn">
-            <a href="#" class="films flexColumn titleMargin" >
+            <a class="films flexColumn titleMargin" id="xMen" >
                 <div class="flexRow">
                     <div class="borderLeft"></div>
                     <h2>X-Men</h2>
@@ -234,7 +234,7 @@
         </div>
 
         <div id="chronologyFilmFantastic" class="flexColumn">
-            <a href="#" class="films flexColumn titleMargin" >
+            <a class="films flexColumn titleMargin" id="fantastic4" >
                 <div class="flexRow">
                     <div class="borderLeft"></div>
                     <h2>Fantastic Four</h2>
@@ -249,7 +249,7 @@
         </div>
 
         <div id="chronologyFilmSpiderMan" class="flexColumn">
-            <a href="#" class="films flexColumn titleMargin" >
+            <a class="films flexColumn titleMargin" id="spiderMan">
                 <div class="flexRow">
                     <div class="borderLeft"></div>
                     <h2>Spider-Man</h2>
@@ -264,7 +264,7 @@
         </div>
 
         <div id="chronologyFilmAmazingSpiderMan" class="flexColumn">
-            <a href="#" class="films flexColumn titleMargin" >
+            <a class="films flexColumn titleMargin" id="amazingSpiderMan">
                 <div class="flexRow">
                     <div class="borderLeft"></div>
                     <h2>The Amazing Spider-Man</h2>
@@ -278,16 +278,17 @@
             </div>
         </div>
 
-        <h1 class="red">Exclusives videos</h1>
+        <div id="chronologyFilmMarvelAll" class="flexColumn">
+            <a class="films flexColumn titleMargin" id="marvelAll" >
+                <div class="flexRow">
+                    <div class="borderLeft"></div>
+                    <h2>All other Marvel movies</h2>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+            <div id="containerFilmAll" class="flexRow">
 
-        <h1 class="red"> Explore what's streaming</h1>
-
-        <div id="primeVideo" class="flexColumn">
-                <h3 class="colorWhite">PRIME VIDEO </h3>
-            <div class="borderBottom"></div>
-            <h3 class="colorWhite">Included with Prime</h3>
-
-            <!-- ajouter contenue -->
+            </div>
         </div>
 
         <h1 id="Explore" class="red">Explore movies & TV shows</h1>
@@ -300,19 +301,7 @@
             </div>
             <h4 class="colorGrey">Trailers for upcoming releases</h4>
         </div>
-
-        <div id="topNews" class="flexColumn">
-            <a href="#" class="films flexColumn titleMargin" >
-                <div class="flexRow">
-                    <div class="borderLeft"></div>
-                    <h2>Top News </h2>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div>
-                    <h4 class="colorGrey"> Weekend of February 5-7</h4>
-                </div>
-            </a>
-            <!-- completer .... -->
+        <div id="containerComingSoon" class="flexRow">
 
         </div>
 

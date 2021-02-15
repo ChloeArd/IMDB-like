@@ -79,31 +79,37 @@ for (let i = 0; i < community.length; i++) {
 
 // Top picks, utiliser Jquery
 let filmsTopPicks = [
-    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.iBhfFDxIeeXX6rTHxpWiJgHaLH&pid=Api&P=0&w=300&h=300", "star" : 8.1, "title" : "Thor Ragnarok"},
-    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.nbiKC4SfvhE7v_TwIbH4RgHaK-&pid=Api&P=0&w=300&h=300", "star" : 8.0, "title" : "WandaVison"},
-    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.HmpvO2p1w1sVQQREs2BDLwHaLH&pid=Api&P=0&w=300&h=300", "star" : 8.0, "title" : "Guardians of the Galaxy"},
-    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.RAxOsPPR7Yj9deu4JOK7HQHaK-&pid=Api&P=0&w=300&h=300", "star" : 7.6, "title" : "Guardians of the Galaxie vol.2"},
-    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.vsy2Wik0cXdOrOU0A80CeQHaK-&pid=Api&P=0&w=300&h=300", "star" : 7.8, "title" : "Black Panther"},
-    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.dXkLdHXowR5VL8j6DdCwFAHaK9&pid=Api&P=0&w=300&h=300", "star" : 8.5, "title" : "Avengers : Endgame"}
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.ZkOmuqOWNqKDYkMKe2YeAgHaK-&pid=Api&P=0&w=300&h=300", "star" : 4.4, "title" : "Avengers : Infinity War (2018)"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.dXkLdHXowR5VL8j6DdCwFAHaK9&pid=Api&P=0&w=300&h=300", "star" : 4.2, "title" : "Avengers : Endgame"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.HmpvO2p1w1sVQQREs2BDLwHaLH&pid=Api&P=0&w=300&h=300", "star" : 4.2, "title" : "Guardians of the Galaxy"},
+    {"imageSrc" : "https://tse2.explicit.bing.net/th?id=OIP.xWJqmEU71J30SH_z01-TqwHaLH&pid=Api&P=0&w=300&h=300", "star" : 4.2, "title" : "Avengers"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.RAxOsPPR7Yj9deu4JOK7HQHaK-&pid=Api&P=0&w=300&h=300", "star" : 4.1, "title" : "Guardians of the Galaxie vol.2"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.PrXmctC7S4DpkZzoxWbbYAAAAA&pid=Api&P=0&w=300&h=300", "star" : 4, "title" : "Iron Man"}
 ];
 
-function createFilmsTopPicks (i) {
+for (let i = 0; i < filmsTopPicks.length; i++) {
     $("#containerTopPicks").append(
         "<div id='filmTopPick" + [i] + "' class='flexColumn backFilm'>" +
-            "<a href='#'><img class='imageFilmTopPicks' src='"+ filmsTopPicks[i].imageSrc +"'></a>" +
-            "<span><i class='fas fa-star red'></i>" + filmsTopPicks[i].star + "</span>" +
-            "<a href='#' class='title'>" + filmsTopPicks[i].title + "</a>" +
-            "<a href='#' class='watchList' id='filmWatchList" + [i] + "'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
+        "<a href='#'><img class='imageFilmTopPicks' src='"+ filmsTopPicks[i].imageSrc +"'></a>" +
+        "<span><i class='fas fa-star red'></i>" + filmsTopPicks[i].star + "</span>" +
+        "<a href='#' class='title'>" + filmsTopPicks[i].title + "</a>" +
+        "<a href='#' class='watchList' id='filmWatchList" + [i] + "'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
         "</div>"
     );
 }
 
-createFilmsTopPicks(0);
-createFilmsTopPicks(1);
-createFilmsTopPicks(2);
-createFilmsTopPicks(3);
-createFilmsTopPicks(4);
-createFilmsTopPicks(5)
+//Allows you to make the container appear or disappear, containing the films
+let nbClik = 0;
+$("#topPicks1").click(function () {
+    if (nbClik === 0) {
+        $("#containerTopPicks").css("display", "none");
+        nbClik++;
+    }
+    else {
+        $("#containerTopPicks").css("display", "flex");
+        nbClik = 0;
+    }
+})
 
 
 // Chronological movies marvel
@@ -135,7 +141,7 @@ let chronology = [
 
 ];
 
-function createChronologyFilm (i) {
+for (let i = 0; i < chronology.length; i++) {
     let number = i + 1;
     $("#containerChronology").append(
         "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
@@ -146,31 +152,17 @@ function createChronologyFilm (i) {
     );
 }
 
-createChronologyFilm(0);
-createChronologyFilm(1);
-createChronologyFilm(2);
-createChronologyFilm(3);
-createChronologyFilm(4);
-createChronologyFilm(5);
-createChronologyFilm(6);
-createChronologyFilm(7);
-createChronologyFilm(8);
-createChronologyFilm(9);
-createChronologyFilm(10);
-createChronologyFilm(11);
-createChronologyFilm(12);
-createChronologyFilm(13);
-createChronologyFilm(14);
-createChronologyFilm(15);
-createChronologyFilm(16);
-createChronologyFilm(17);
-createChronologyFilm(18);
-createChronologyFilm(19);
-createChronologyFilm(20);
-createChronologyFilm(21);
-createChronologyFilm(22);
-createChronologyFilm(23);
-
+let nbClik2 = 0;
+$("#avengers").click(function () {
+    if (nbClik2 === 0) {
+        $("#containerChronology").css("display", "none");
+        nbClik2++;
+    }
+    else {
+        $("#containerChronology").css("display", "flex");
+        nbClik2 = 0;
+    }
+})
 
 let chronologyXmen = [
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.RwsWbtBY6uBQS1cSr0be-AAAAA&pid=Api&P=0&w=300&h=300", "title" : "X-Men : First Class  (2011)"},
@@ -187,7 +179,7 @@ let chronologyXmen = [
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.lao4-o4Si6QeTRnDrYtbHQAAAA&pid=Api&P=0&w=300&h=300", "title" : "The New Mutants (2020)"},
 ];
 
-function createChronologyXmen (i) {
+for (let i = 0; i < chronologyXmen.length; i++) {
     let number = i + 1;
     $("#containerXmen").append(
         "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
@@ -198,18 +190,17 @@ function createChronologyXmen (i) {
     );
 }
 
-createChronologyXmen(0);
-createChronologyXmen(1);
-createChronologyXmen(2);
-createChronologyXmen(3);
-createChronologyXmen(4);
-createChronologyXmen(5);
-createChronologyXmen(6);
-createChronologyXmen(7);
-createChronologyXmen(8);
-createChronologyXmen(9);
-createChronologyXmen(10);
-createChronologyXmen(11);
+let nbClik3 = 0;
+$("#xMen").click(function () {
+    if (nbClik3 === 0) {
+            $("#containerXmen").css("display", "none");
+        nbClik3++;
+    }
+    else {
+        $("#containerXmen").css("display", "flex");
+        nbClik3 = 0;
+    }
+})
 
 // Fantastic 4
 let chronologyFantastic = [
@@ -218,7 +209,7 @@ let chronologyFantastic = [
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.SMF6w_BkUX1fy682L9WGrgHaLK&pid=Api&P=0&w=300&h=300", "title" : "Fantastic Four (2015)"},
 ];
 
-function createChronologyFantastic (i) {
+for (let i = 0; i < chronologyFantastic.length; i++){
     let number = i + 1;
     $("#containerFantastic").append(
         "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
@@ -229,9 +220,17 @@ function createChronologyFantastic (i) {
     );
 }
 
-createChronologyFantastic(0);
-createChronologyFantastic(1);
-createChronologyFantastic(2);
+let nbClik4 = 0;
+$("#fantastic4").click(function () {
+    if (nbClik4 === 0) {
+        $("#containerFantastic").css("display", "none");
+        nbClik4++;
+    }
+    else {
+        $("#containerFantastic").css("display", "flex");
+        nbClik4 = 0;
+    }
+})
 
 // Spider-Man
 let chronologySpiderMan = [
@@ -240,7 +239,7 @@ let chronologySpiderMan = [
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.E9cK3MLj_0FbnltKBT1hwQHaLH&pid=Api&P=0&w=300&h=300", "title" : "Spider-Man 3 (2007)"},
 ];
 
-function createChronologySpiderMan (i) {
+for (let i = 0; i < chronologySpiderMan.length; i++) {
     let number = i + 1;
     $("#containerSpiderMan").append(
         "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
@@ -251,9 +250,17 @@ function createChronologySpiderMan (i) {
     );
 }
 
-createChronologySpiderMan(0);
-createChronologySpiderMan(1);
-createChronologySpiderMan(2);
+let nbClik5 = 0;
+$("#spiderMan").click(function () {
+    if (nbClik5 === 0) {
+        $("#containerSpiderMan").css("display", "none");
+        nbClik5++;
+    }
+    else {
+        $("#containerSpiderMan").css("display", "flex");
+        nbClik5 = 0;
+    }
+})
 
 // The amazing Spider-Man
 let chronologyAmazingSpiderMan = [
@@ -261,7 +268,7 @@ let chronologyAmazingSpiderMan = [
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.aCchXBFu_g7hrD_35DnbNQHaLG&pid=Api&P=0&w=300&h=300", "title" : "The Amazing Spider-Man 2 (2014)"}
 ];
 
-function createChronologyAmazingSpiderMan (i) {
+for (let i = 0; i < chronologyAmazingSpiderMan.length; i++) {
     let number = i + 1;
     $("#containerAmazingSpiderMan").append(
         "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
@@ -272,5 +279,78 @@ function createChronologyAmazingSpiderMan (i) {
     );
 }
 
-createChronologyAmazingSpiderMan(0);
-createChronologyAmazingSpiderMan(1);
+let nbClik6 = 0;
+$("#amazingSpiderMan").click(function () {
+    if (nbClik6 === 0) {
+        $("#containerAmazingSpiderMan").css("display", "none");
+        nbClik6++;
+    }
+    else {
+        $("#containerAmazingSpiderMan").css("display", "flex");
+        nbClik6 = 0;
+    }
+})
+
+// All other Marvel movies
+let chronologyMarvelAll = [
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.e4DuiSbUNtg46Yz9YjoU5AHaKC&pid=Api&P=0&w=300&h=300", "title" : "Venom (2018)"},
+    {"imageSrc" : "https://tse2.explicit.bing.net/th?id=OIP.JkRh8cW8DxZmcCZUbukx5QHaLG&pid=Api&P=0&w=300&h=300", "title" : "Logan (2017)"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.EZtUdfhWXeO8Fde5d1peAAHaLH&pid=Api&P=0&w=300&h=300", "title" : "Ghost rider : Spirit of Vengeance (2012)"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.IXD9b-Wh6h-GKDDF5hGt0gHaK_&pid=Api&P=0&w=300&h=300", "title" : "Ghost rider : Punisher 2 : War Zone (2009)"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.01dG2V8RrhPLCxEonp9pvwHaLH&pid=Api&P=0&w=300&h=300", "title" : "Ghost rider (2007)"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.rarc19CwXWfUTsbiJJBz1AAAAA&pid=Api&P=0&w=300&h=300", "title" : "Man-Thing (2005)"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.k__8UPx0ODlujfn2HD0OdgHaKx&pid=Api&P=0&w=300&h=300", "title" : "Elektra (2005)"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.A130Qsob4q4qzI6NJGbLGwHaLH&pid=Api&P=0&w=300&h=300", "title" : "Blade : Trinity (2004)"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.X-e3E0su714muKZW6q1frgHaKj&pid=Api&P=0&w=300&h=300", "title" : "The Punisher (2004)"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.GMA0DlHCAE5cYYOYPyeh0QHaK7&pid=Api&P=0&w=300&h=300", "title" : "Daredevil (2003)"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.Tmm5YWcUtzcCyXqDoMQhJQHaKg&pid=Api&P=0&w=300&h=300", "title" : "Blade II (2002)"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.3jmhkQUwg8mqi433X_UwTwHaJ-&pid=Api&P=0&w=300&h=300", "title" : "Blade (1998)"},
+
+];
+
+for (let i = 0; i < chronologyMarvelAll.length; i++) {
+    $("#containerFilmAll").append(
+        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
+        "<a href='#'><img class='imageFilmTopPicks' src='"+ chronologyMarvelAll[i].imageSrc +"'></a>" +
+        "<a href='#' class='title'>" + chronologyMarvelAll[i].title + "</a>" +
+        "</div>"
+    );
+}
+
+let nbClik7 = 0;
+$("#marvelAll").click(function () {
+    if (nbClik7 === 0) {
+        $("#containerFilmAll").css("display", "none");
+        nbClik7++;
+    }
+    else {
+        $("#containerFilmAll").css("display", "flex");
+        nbClik7 = 0;
+    }
+})
+
+// Coming Soon to theaters
+let comingSoon = [
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.lcXgv2CJFIoncCR6OIDRKwHaK-&pid=Api&P=0&w=300&h=300", "title" : "Black Widow", "exit" : "May 5, 2021"},
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.yd_Gp5mcIftqVSAtr4qR5QAAAA&pid=Api&P=0&w=300&h=300", "title" : "Shang-Chi and the Legend of the Ten Rings", "exit" : "July 7, 2021"},
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.iPxwjvKtXcvvadzxA54-ygHaIs&pid=Api&P=0&w=300&h=300", "title" : "Eternals", "exit" : "November 5, 2021"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.8K2PD4xXb2FehPcm5VkYXAAAAA&pid=Api&P=0&w=300&h=300", "title" : "Untitled Spider-Man : Far From Home Sequel", "exit" : "December 15, 2021"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.qSaqgX7yqXKQrMfT9OnxLgHaK-&pid=Api&P=0&w=300&h=300", "title" : "Doctor Strange in the Multiverse of Madness", "exit" : "March 23, 2022"},
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.msYo9IrII3mMPJ0EIP7whwHaLB&pid=Api&P=0&w=300&h=300", "title" : "Thor : Love and Thunder", "exit" : "May 4, 2022"},
+    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.2vT-uIH0MP4kH8YeQoZjNgHaLA&pid=Api&P=0&w=300&h=300", "title" : "Black Panther 2", "exit" : "July 6, 2022"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.Y8ZxZIPLhaGBij439zSZ5gHaJQ&pid=Api&P=0&w=300&h=300", "title" : "Captain Marvel 2", "exit" : "November 9, 2022"},
+    {"imageSrc" : "https://fr.web.img3.acsta.net/c_310_420/pictures/20/12/11/11/36/0677221.jpg", "title" : "Ant-Man and the Wasp : Quantumania", "exit" : "2023"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.QcCtGcp6BDnkffryBkJH2wHaK9&pid=Api&P=0&w=300&h=300", "title" : "Guardians of the Galaxy Vol. 3", "exit" : "2023"},
+    {"imageSrc" : "https://www.unificationfrance.com/IMG/jpg/mahersala-blade.jpg", "title" : "Blade", "exit" : "2023"},
+
+];
+
+for (let i = 0; i < comingSoon.length; i++) {
+    $("#containerComingSoon").append(
+        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
+        "<a href='#'><img class='imageFilmTopPicks' src='"+ comingSoon[i].imageSrc +"'></a>" +
+        "<span class='exit colorGrey'> Release date : " + comingSoon[i].exit + "</span>" +
+        "<a href='#' class='title'>" + comingSoon[i].title + "</a>" +
+        "</div>"
+    );
+}
