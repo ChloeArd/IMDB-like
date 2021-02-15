@@ -321,6 +321,7 @@ p {
 
 .watchList {
     background-color: #252525;
+    margin: 10px auto;
 }
 
 .linkBlue:hover {
@@ -363,7 +364,7 @@ p {
     margin-left: 75%;
 }
 
-.hoverRed:hover, .hoverRed:hover i {
+.hoverRed:hover i {
     color: #E62A04;
     background-color: transparent;
 }

@@ -148,6 +148,7 @@ for (let i = 0; i < chronology.length; i++) {
             "<a href='" + chronology[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronology[i].imageSrc +"'></a>" +
             "<span class='number'>" + number + "</span>" +
             "<a href='" + chronology[i].trailer + "' class='title'>" + chronology[i].title + "</a>" +
+            "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
         "</div>"
     );
 }
@@ -186,6 +187,7 @@ for (let i = 0; i < chronologyXmen.length; i++) {
         "<a href='" + chronologyXmen[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronologyXmen[i].imageSrc +"'></a>" +
         "<span class='number'>" + number + "</span>" +
         "<a href='" + chronologyXmen[i].trailer + "' class='title'>" + chronologyXmen[i].title + "</a>" +
+        "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
         "</div>"
     );
 }
@@ -216,6 +218,7 @@ for (let i = 0; i < chronologyFantastic.length; i++){
         "<a href='" + chronologyFantastic[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronologyFantastic[i].imageSrc +"'></a>" +
         "<span class='number'>" + number + "</span>" +
         "<a href='" + chronologyFantastic[i].trailer + "' class='title'>" + chronologyFantastic[i].title + "</a>" +
+        "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
         "</div>"
     );
 }
@@ -246,6 +249,7 @@ for (let i = 0; i < chronologySpiderMan.length; i++) {
         "<a href='" + chronologySpiderMan[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronologySpiderMan[i].imageSrc +"'></a>" +
         "<span class='number'>" + number + "</span>" +
         "<a href='" + chronologySpiderMan[i].trailer + "' class='title'>" + chronologySpiderMan[i].title + "</a>" +
+        "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
         "</div>"
     );
 }
@@ -275,6 +279,7 @@ for (let i = 0; i < chronologyAmazingSpiderMan.length; i++) {
         "<a href='" + chronologyAmazingSpiderMan[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronologyAmazingSpiderMan[i].imageSrc +"'></a>" +
         "<span class='number'>" + number + "</span>" +
         "<a href='" + chronologyAmazingSpiderMan[i].trailer + "' class='title'>" + chronologyAmazingSpiderMan[i].title + "</a>" +
+        "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
         "</div>"
     );
 }
@@ -313,6 +318,7 @@ for (let i = 0; i < chronologyMarvelAll.length; i++) {
         "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
         "<a href='" + chronologyMarvelAll[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronologyMarvelAll[i].imageSrc +"'></a>" +
         "<a href='" + chronologyMarvelAll[i].trailer + "' class='title'>" + chronologyMarvelAll[i].title + "</a>" +
+        "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
         "</div>"
     );
 }
