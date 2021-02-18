@@ -60,7 +60,7 @@ a {
     text-decoration: none;
     display: inline-flex;
     padding: 4px 4px;
-    width: 10%;
+    width: 15%;
 }
 
 a:hover {
@@ -381,4 +381,53 @@ p {
 
 #containerChronology, #containerXmen, #containerNextFilm, #containerAmazingSpiderMan, #containerFantastic, #containerFilmAll, #containerSpiderMan, #containerComingSoon {
     flex-wrap: wrap;
+}
+
+
+
+
+#send {
+    background-color: #E62A04;
+    width: 20%;
+    margin: 10px auto;
+    border-radius: 15px 15px;
+}
+
+#send:hover {
+    background-color: #C82B0B;
+}
+
+form {
+    padding: 0 250px;
+    font-size: 15px;
+}
+
+label {
+    margin: 8px 0;
+}
+
+#spiderHelp {
+    margin: 15px auto;
+}
+
+#contact {
+    background-color: #555555;
+    margin: 25px auto;
+    padding: 12px;
+    border-radius: 3px 3px;
+    font-size: 15px;
+    width: 30%;
+}
+
+#contact > p {
+    font-size: 15px;
+}
+
+.colorRed {
+    color: #E62A04;
+}
+
+#contact > p > i {
+    font-size: 40px;
+    color: #E62A04;
 }
