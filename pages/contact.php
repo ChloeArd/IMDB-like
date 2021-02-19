@@ -20,23 +20,17 @@ include "../_partials/menu.php";
                 <input type="email" name="email" id="email" class="colorRed" required>
                 <label for="subject" class="colorRed" >Subject :</label>
                 <input type="text" name="subject" id="subject" class="colorRed" required>
-                <label for="message" class="colorRed" >Votre message :</label>
+                <label for="message" class="colorRed" >Your message :</label>
                 <textarea name="message" id="message" class="colorRed" required></textarea>
                 <input id="send" type="submit" value="Send" class="colorWhite">
             </form>
         </div>
         <div id="contact" class="flexColumn">
-            <p><i class="fas fa-headphones"></i> Votre service client est joignable par téléphone au <span class="colorRed">09 32 14 00 00</span>, 7j/7, de 8h00 à 21h00.</p>
-            <span>Aussi par email : <span class="colorRed">service.IMDbMarvel@gmail.com</span></span>
+            <p><i class="fas fa-headphones"></i> Your customer service can be reached by phone on <span class="colorRed">09 32 14 00 00</span>, 7 days a week, from 8 a.m. to 9 p.m.</p>
+            <span>Also by email : <span class="colorRed">service.IMDbMarvel@gmail.com</span></span>
         </div>
 
     </main>
-
-
-
-
-
-
 
 <?php
 include "../_partials/footer.php";

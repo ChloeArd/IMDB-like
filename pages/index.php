@@ -1,75 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>IMDb</title>
-    <script src="https://kit.fontawesome.com/351e9300a0.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        <a href="index.html"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/810850072875106324/imdbMarvel-removebg-preview.png" alt="logo IMDb"></a>
-        <a href="#" id="menu"><i class="fas fa-bars"></i>Menu</a>
-        <div id="inputs" class="input-group mb-3">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
-            <ul id="menuDeroulant" class="dropdown-menu">
-                <li><a id="search-All" href="#"><i class="fas fa-search red"></i>All</a></li>
-                <li><a href="#"><i class="fas fa-film"></i> Titles</a></li>
-                <li><a  href="#"><i class="fas fa-tv"></i> TV Episodes</a></li>
-                <li><a href="#"><i class="fas fa-user-friends"></i> Celebs</a></li>
-                <li><a href="#"><i class="far fa-building"></i> Companies</a></li>
-                <li><a  href="#"> <i class="far fa-keyboard"></i> Keywords</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a  href="#"><i class="fas fa-search-plus"></i> Advanced Search > </a></li>
-            </ul>
-            <input id="search_IMDb" type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search IMDb">
-            <button id="enter" class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
-        </div>
-        <a href="#"><i class="fas fa-plus-circle"></i> Watchlist</a>
-        <a href="#" id="sign_in"><i class="fas fa-user"></i> Sign In</a>
-        <a href="./pages/contact.php"><i class="fas fa-phone"></i> Contact</a>
-    </header>
-
-    <!-- Fenetre modale -->
-    <div id="modal">
-        <div id="top" class="flexRow">
-            <a href="index.html"><img id="logo_IMDb2" src="https://cdn.discordapp.com/attachments/689017273050202134/810850072875106324/imdbMarvel-removebg-preview.png" alt="logo IMDb"></a>
-            <button id="closeModal"><i class="fas fa-times"></i></button>
-        </div>
-
-        <div id="row" class="flexRow">
-            <div id="column1" class="flexColumn">
-                <div class="genre flexColumn" id="movies">
-                    <h2><i class="fas fa-film red"></i>Movies</h2>
-                </div>
-                <div class="genre flexColumn" id="celebs">
-                    <h2><i class="fas fa-user-friends red"></i>Celebs</h2>
-                </div>
-            </div>
-
-            <div id="column2" class="flexColumn">
-                <div class="genre flexColumn" id="TVShows">
-                    <h2><i class="fas fa-tv red"></i>TV Shows</h2>
-                </div>
-                <div class="genre flexColumn" id="watch">
-                    <h2><i class="fas fa-play-circle red"></i>Watch</h2>
-                </div>
-            </div>
-
-            <div id="column3" class="flexColumn">
-                <div class="genre flexColumn" id="awardsEvents">
-                    <h2><i class="far fa-star red"></i>Awards & Events</h2>
-                </div>
-                <div class="genre flexColumn" id="community">
-                    <h2><i class="fas fa-globe-europe red"></i>Community</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+<?php
+$title = "IMDb Marvel";
+include "../_partials/header.php";
+include "../_partials/menu.php";
+?>
 
     <main>
         <div id="upNext" class="flexRow">
@@ -139,7 +72,7 @@
                 <div id="containerNextFilm" class="flexColumn">
                     <div class="filmsNext flexRow">
                         <img src="https://tse3.mm.bing.net/th?id=OIP.YqOqbxWhqjcR21YLa3AkwAHaK-&pid=Api&P=0&w=300&h=300" alt="Film Ant-Man">
-                        <a href="https://www.youtube.com/watch?v=tmeOjFno6Do" class="films"><i class="far fa-play-circle"></i> 1h 57min
+                        <a href="https://www.youtube.com/watch?v=pWdKf3MneyI" class="films"><i class="far fa-play-circle"></i> 1h 57min
                             <p>"Ant-Man"</p>
                             <p>Action, Science fiction</p>
                         </a>
@@ -196,7 +129,7 @@
                 <i class="fas fa-plus-circle"></i>
                 <h3 class="colorWhite">Sign in to access your Watchlist</h3>
                 <h4 class="colorGrey"> Save shows and movies to keep track of what you want to watch</h4>
-                <a class="buttonRed" href="#"> Sign in to IMDb > </a>
+                <a class="buttonRed" href="../pages/account.php"> Sign in to IMDb > </a>
             </div>
         </div>
 
@@ -313,37 +246,6 @@
         </div>
     </main>
 
-
-    <footer class="flexColumn">
-        <div class="row flexRow">
-            <a class="socialNetwork red" href=""><i class="fab fa-facebook"></i></a>
-            <a class="socialNetwork red" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="socialNetwork red" href="#"><i class="fab fa-twitch"></i></a>
-            <a class="socialNetwork red" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="socialNetwork red" href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-        <div class="row flexRow">
-            <a href="#">Get the IMDb App <i class="fas fa-share-square"></i></a>
-            <a href="#"> Help <i class="fas fa-share-square"></i></a>
-            <a href="#"> Site Index <i class="fas fa-share-square"></i></a>
-            <a href="#"> IMDbPro <i class="fas fa-share-square"></i></a>
-            <a href="#"> Box Office Mojo <i class="fas fa-share-square"></i></a>
-            <a href="#"> IMDb Developer <i class="fas fa-share-square"></i></a>
-            <a href="#"> Press Room</a>
-            <a href="#">Advertising <i class="fas fa-share-square"></i></a>
-            <a href="#"> Jobs <i class="fas fa-share-square"></i></a>
-            <a href="#"> Conditon of Use</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Interest-Based Ads <i class="fas fa-share-square"></i></a>
-        </div>
-
-        <p id="amazon"> an <i class="fab fa-amazon"></i> company</p>
-        <p id="end"><i class="far fa-copyright"></i> 2021 by IMDb-Marvel.com, Inc.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-
-</body>
-</html>
+<?php
+include "../_partials/footer.php";
+?>

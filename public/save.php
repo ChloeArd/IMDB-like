@@ -17,7 +17,7 @@ if (isset($_POST["email"], $_POST["message"], $_POST["subject"])){
     mail($to, $subject, $message, $headers, "-f ".$from);
 }
 
-header('Location: ../index.html');
+header('Location: ../public/admin.php');
 
 $arrayMessage = array(
     "last name" => $lastName,

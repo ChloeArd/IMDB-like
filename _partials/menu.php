@@ -1,5 +1,5 @@
 <header>
-    <a href="../index.html"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/810850072875106324/imdbMarvel-removebg-preview.png" alt="logo IMDb"></a>
+    <a href="../pages/index.php"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/810850072875106324/imdbMarvel-removebg-preview.png" alt="logo IMDb"></a>
     <a href="#" id="menu"><i class="fas fa-bars"></i>Menu</a>
     <div id="inputs" class="input-group mb-3">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
@@ -17,14 +17,14 @@
         <button id="enter" class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
     </div>
     <a href="#"><i class="fas fa-plus-circle"></i> Watchlist</a>
-    <a href="#" id="sign_in"><i class="fas fa-user"></i> Sign In</a>
+    <a href="../pages/account.php" id="sign_in"><i class="fas fa-user"></i> Sign In</a>
     <a href="../pages/contact.php"><i class="fas fa-phone"></i> Contact</a>
 </header>
 
 <!-- Fenetre modale -->
 <div id="modal">
     <div id="top" class="flexRow">
-        <a href="../index.html"><img id="logo_IMDb2" src="https://cdn.discordapp.com/attachments/689017273050202134/810850072875106324/imdbMarvel-removebg-preview.png" alt="logo IMDb"></a>
+        <a href="../pages/index.php"><img id="logo_IMDb2" src="https://cdn.discordapp.com/attachments/689017273050202134/810850072875106324/imdbMarvel-removebg-preview.png" alt="logo IMDb"></a>
         <button id="closeModal"><i class="fas fa-times"></i></button>
     </div>
 
