@@ -1,3 +1,9 @@
+//API Marvel
+let url = "http://gateway.marvel.com/v1/public/comics?ts=1&apikey=0b394d7cce565e8a775140fddd806bd1&hash=2d964b672c4c9fe9360ed571a9184646";
+console.log(url);
+
+
+
 let menu = document.getElementById("menu");
 let modal = document.getElementById("modal");
 let closeModal = document.getElementById("closeModal");
@@ -360,3 +366,22 @@ for (let i = 0; i < comingSoon.length; i++) {
         "</div>"
     );
 }
+
+//check the validity between the two user provided passwords.
+
+let password = document.getElementById("passwordSignUp");
+let passwordConfirm = document.getElementById("repeatPassword");
+
+function checkPassword() {
+    if (password.value !== passwordConfirm.value) {
+        passwordConfirm.setCustomValidity("Passwords do not match !");
+    }
+    else {
+        passwordConfirm.setCustomValidity("");
+    }
+}
+
+password.addEventListener("change", checkPassword);
+passwordConfirm.addEventListener("keyup", checkPassword);
+
+

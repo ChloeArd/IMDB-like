@@ -286,7 +286,7 @@ a.socialNetwork:hover {
     background-color: #E62A04;
 }
 
-a.buttonRed:hover {
+a.buttonRed:hover, input.buttonRed:hover {
     background-color: #C82B0B;
 }
 
@@ -388,7 +388,7 @@ p {
 
 #send {
     background-color: #E62A04;
-    width: 20%;
+    padding: 5px 30px;
     margin: 10px auto;
     border-radius: 15px 15px;
 }
@@ -432,26 +432,30 @@ label {
     color: #E62A04;
 }
 
-.error, .success{
-    display: block;
-    background-color: indianred;
-    width: 100%;
-    padding: 15px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    margin: auto;
-    z-index: 100;
-    box-shadow: 5px 5px 5px darkslategrey;
-    font-size: 30px;
+.backgroundImage {
+    background-image: url("https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bW92aWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-.success{
-    background-color: darkseagreen;
+section {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
-.backgroundWhite {
-    background-color: white;
+#signIn2, #signUp {
+    margin: 20px 0;
+}
+
+#account {
+    padding: 40px;
+}
+
+.colorBlack {
+    color: #121212;
+}
+
+.titleAccount {
+    margin: 20px;
 }

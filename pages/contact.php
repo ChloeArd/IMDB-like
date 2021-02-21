@@ -22,7 +22,7 @@ include "../_partials/menu.php";
                 <input type="text" name="subject" id="subject" class="colorRed" required>
                 <label for="message" class="colorRed" >Your message :</label>
                 <textarea name="message" id="message" class="colorRed" required></textarea>
-                <input id="send" type="submit" value="Send" class="colorWhite">
+                <input id="send" type="submit" value="Send" class="colorWhite buttonRed">
             </form>
         </div>
         <div id="contact" class="flexColumn">
