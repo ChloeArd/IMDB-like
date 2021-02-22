@@ -71,14 +71,14 @@ include "../_partials/menu.php";
                 <h3 class="red">Up next</h3>
                 <div id="containerNextFilm" class="flexColumn">
                     <div class="filmsNext flexRow">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.YqOqbxWhqjcR21YLa3AkwAHaK-&pid=Api&P=0&w=300&h=300" alt="Film Ant-Man">
+                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/ant-man_lob_crd_01_8.jpg" alt="Film Ant-Man">
                         <a href="https://www.youtube.com/watch?v=pWdKf3MneyI" class="films"><i class="far fa-play-circle"></i> 1h 57min
                             <p>"Ant-Man"</p>
                             <p>Action, Science fiction</p>
                         </a>
                     </div>
                     <div class="filmsNext flexRow">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.PrXmctC7S4DpkZzoxWbbYAAAAA&pid=Api&P=0&w=300&h=300" alt="Film Iron Man">
+                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman_lob_crd_01_3.jpg" alt="Film Iron Man">
                         <a href="https://www.youtube.com/watch?v=8ugaeA-nMTc" class="films"><i class="far fa-play-circle"></i> 2h 06min
                             <p>"Iron Man"</p>
                             <p>Action, Science fiction</p>
@@ -98,7 +98,7 @@ include "../_partials/menu.php";
 
         <div id="whatToWatch" class="flexRow">
             <h1 class="red">What to watch</h1>
-            <a class="buttonRed" href="#"> Browse our What to Watch page > </a>
+            <a class="buttonRed margin50" href="#marvelCategories"> Browse our What to Watch page > </a>
         </div>
 
         <div id="topPicks" class="flexColumn">
@@ -133,7 +133,7 @@ include "../_partials/menu.php";
             </div>
         </div>
 
-        <h1 class="red">Marvel Categories</h1>
+        <h1 id="marvelCategories" class="red">Marvel Categories</h1>
 
         <div id="chronologyFilmMarvel" class="flexColumn">
             <a class="films flexColumn titleMargin" id="avengers" >
@@ -244,6 +244,7 @@ include "../_partials/menu.php";
                 <a href="#" id="clear" class="linkBlue">Clear all</a>
             </div>
         </div>
+
     </main>
 
 <?php

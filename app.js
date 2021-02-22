@@ -85,12 +85,12 @@ for (let i = 0; i < community.length; i++) {
 
 // Top picks, utiliser Jquery
 let filmsTopPicks = [
-    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.ZkOmuqOWNqKDYkMKe2YeAgHaK-&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=6ZfuNTqbHE8", "star" : 4.4, "title" : "Avengers : Infinity War (2018)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersinfinitywar_lob_crd_02_1.jpg", "trailer" : "https://www.youtube.com/watch?v=6ZfuNTqbHE8", "star" : 4.4, "title" : "Avengers : Infinity War (2018)"},
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.dXkLdHXowR5VL8j6DdCwFAHaK9&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=TcMBFSGVi1c", "star" : 4.2, "title" : "Avengers : Endgame"},
-    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.HmpvO2p1w1sVQQREs2BDLwHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=d96cjJhvlMA", "star" : 4.2, "title" : "Guardians of the Galaxy"},
-    {"imageSrc" : "https://tse2.explicit.bing.net/th?id=OIP.xWJqmEU71J30SH_z01-TqwHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=eOrNdBpGMv8", "star" : 4.2, "title" : "Avengers"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/guardiansofthegalaxy_lob_crd_03.jpg", "trailer" : "https://www.youtube.com/watch?v=d96cjJhvlMA", "star" : 4.2, "title" : "Guardians of the Galaxy"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/theavengers_lob_crd_03.jpg", "trailer" : "https://www.youtube.com/watch?v=eOrNdBpGMv8", "star" : 4.2, "title" : "Avengers"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.RAxOsPPR7Yj9deu4JOK7HQHaK-&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=dW1BIid8Osg", "star" : 4.1, "title" : "Guardians of the Galaxie vol.2"},
-    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.PrXmctC7S4DpkZzoxWbbYAAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=8ugaeA-nMTc", "star" : 4, "title" : "Iron Man"}
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman_lob_crd_01_3.jpg", "trailer" : "https://www.youtube.com/watch?v=8ugaeA-nMTc", "star" : 4, "title" : "Iron Man"}
 ];
 
 for (let i = 0; i < filmsTopPicks.length; i++) {
@@ -120,30 +120,30 @@ $("#topPicks1").click(function () {
 
 // Chronological movies marvel
 let chronology = [
-    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.gZisKpIJHw7DvNfOZKVY7QHaKj&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=JerVrbLldXw", "title" : "Captain America : First Avenger (2011)"},
-    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.TmwtelV4DVHM4XWckTXqnwHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=Z1BCujX3pw8", "title" : "Captain Marvel (2019)"},
-    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.PrXmctC7S4DpkZzoxWbbYAAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=8ugaeA-nMTc", "title" : "Iron Man (2008)"},
-    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.dCzFC-INXIYalEQs702e_wHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=qsRZghNciIo", "title" : "Iron Man 2 (2010)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/captainamerica_lob_crd_01.jpg", "trailer" : "https://www.youtube.com/watch?v=JerVrbLldXw", "title" : "Captain America : First Avenger (2011)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/captainmarvel_lob_crd_06.jpg", "trailer" : "https://www.youtube.com/watch?v=Z1BCujX3pw8", "title" : "Captain Marvel (2019)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman_lob_crd_01_3.jpg", "trailer" : "https://www.youtube.com/watch?v=8ugaeA-nMTc", "title" : "Iron Man (2008)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman2_lob_crd_01_3.jpg", "trailer" : "https://www.youtube.com/watch?v=qsRZghNciIo", "title" : "Iron Man 2 (2010)"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.-5pdYhXQUENF--njd-uzqAHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=vJUDu40Z_RY", "title" : "Thor (2011)"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.QlmPp2qcFaioUi-EwE6DBwHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=xbqNb2PFKKA", "title" : "The incredible Hulk (2008)"},
-    {"imageSrc" : "https://tse2.explicit.bing.net/th?id=OIP.zjUuKLnstAvgHHPGX7JsNgHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=eOrNdBpGMv8", "title" : "Avengers (2012)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/theavengers_lob_crd_03.jpg", "trailer" : "https://www.youtube.com/watch?v=eOrNdBpGMv8", "title" : "Avengers (2012)"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.u_jYWej4Kn5VC-fm8HBcxQHaLV&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=oYSD2VQagc4", "title" : "Iron Man 3 (2013)"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.9r8lZp30wow8oCInY0MFbAHaJ3&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=npvJ9FTgZbM", "title" : "Thor : The dark world (2013)"},
-    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.yQwqeAhytVfYDWfbJLYC5gHaK-&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=7SlILk2WMTI", "title" : "Captain America : The winter woldier (2014)"},
-    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.pYZChZzBUT3q4EBoDXFA-QHaK-&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=d96cjJhvlMA", "title" : "The Guardians of the Galaxy (2014)"},
-    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.RAxOsPPR7Yj9deu4JOK7HQHaK-&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=dW1BIid8Osg", "title" : "The Guardians of the Galaxy vol.2 (2017)"},
-    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP._8Y0cksUhmWSuqOYaUpvHgHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=tmeOjFno6Do", "title" : "Avengers : Age of Ultron (2015)"},
-    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.PHyvg5iJaa8oqUoKuntVIgAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=pWdKf3MneyI", "title" : "Ant-Man (2015)"},
-    {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.G4h1YdR4wD7zZ0HHfZRJlgHaKf&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=dKrVegVI0Us", "title" : "Civil War (2016)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/captainamericathewintersoldier_lob_crd_01_1.jpg", "trailer" : "https://www.youtube.com/watch?v=7SlILk2WMTI", "title" : "Captain America : The winter woldier (2014)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/guardiansofthegalaxy_lob_crd_03.jpg", "trailer" : "https://www.youtube.com/watch?v=d96cjJhvlMA", "title" : "The Guardians of the Galaxy (2014)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/guardiansofthegalaxyvol.2_lob_crd_01.jpg", "trailer" : "https://www.youtube.com/watch?v=dW1BIid8Osg", "title" : "The Guardians of the Galaxy vol.2 (2017)"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.4J3pDjZJg_QHnEI6U0chGQHaLL&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=tmeOjFno6Do", "title" : "Avengers : Age of Ultron (2015)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ant-man_lob_crd_01_8.jpg", "trailer" : "https://www.youtube.com/watch?v=pWdKf3MneyI", "title" : "Ant-Man (2015)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/captainamericacivilwar_lob_crd_01_9.jpg", "trailer" : "https://www.youtube.com/watch?v=dKrVegVI0Us", "title" : "Civil War (2016)"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.QxKyIFG9BRZkBpNeWoG5AwHaK-&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=RxAtuMu_ph4", "title" : "Black Widow (2021)"},
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.WBVvgtLCkTKNXLuxPQzM4QHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=xjDjIWPwcPU", "title" : "Black Panther (2018)"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.QHKuZu2_e7kxztB9T6x0lwHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=n9DwoQ7HWvI", "title" : "Spider-Man : Homecoming (2017)"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.5voBPa5KkgK5VHuzEMP6tAHaKj&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=8_rTIAOohas", "title" : "Ant-Man and The Wasp (2018)"},
-    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.H3M3cXb_Mr1qAWetlLmKkgAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=Lt-U_t2pUHI",  "title" : "Doctor Strange (2016)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/doctorstrange_lob_crd_01_6.jpg", "trailer" : "https://www.youtube.com/watch?v=Lt-U_t2pUHI",  "title" : "Doctor Strange (2016)"},
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.iBhfFDxIeeXX6rTHxpWiJgHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=ue80QwXMRHg", "title" : "Thor : Ragnarok (2017)"},
-    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.ZkOmuqOWNqKDYkMKe2YeAgHaK-&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=6ZfuNTqbHE8", "title" : "Avengers : Infinity War (2018)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersinfinitywar_lob_crd_02_1.jpg", "trailer" : "https://www.youtube.com/watch?v=6ZfuNTqbHE8", "title" : "Avengers : Infinity War (2018)"},
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.dXkLdHXowR5VL8j6DdCwFAHaK9&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=TcMBFSGVi1c", "title" : "Avengers : Endgame (2019)"},
-    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.NN8mkBLR_ShwpVeHvcQ54wHaJQ&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=Nt9L1jCKGnE", "title" : "Spider-Man : Far from home (2019)"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-manfarfromhome_lob_crd_04_3.jpg", "trailer" : "https://www.youtube.com/watch?v=Nt9L1jCKGnE", "title" : "Spider-Man : Far from home (2019)"},
 
 ];
 

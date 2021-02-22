@@ -60,7 +60,7 @@ a {
     text-decoration: none;
     display: inline-flex;
     padding: 4px 4px;
-    width: 15%;
+    width: 12%;
 }
 
 a:hover {
@@ -280,10 +280,14 @@ a.socialNetwork:hover {
 .buttonRed {
     padding: 5px 80px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 15px;
     border-radius: 5px 5px;
     background-color: #E62A04;
+}
+
+.margin50 {
+    margin-top: 50px;
 }
 
 a.buttonRed:hover, input.buttonRed:hover {
@@ -317,6 +321,7 @@ p {
 .linkBlue, .watchList {
     color: blue;
     font-size: 15px;
+    width: auto;
 }
 
 .watchList {
@@ -407,7 +412,7 @@ label {
 }
 
 #spiderHelp {
-    margin: 15px auto;
+    width: 100%;
 }
 
 #contact {
@@ -435,21 +440,19 @@ label {
 .backgroundImage {
     background-image: url("https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bW92aWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 section {
-    justify-content: center;
     align-items: center;
-    width: 50%;
-}
-
-#signIn2, #signUp {
-    margin: 20px 0;
+    padding: 20px;
+    margin: 40px auto;
+    width: 30%;
 }
 
 #account {
     padding: 40px;
+    height: 800px;
 }
 
 .colorBlack {
@@ -458,4 +461,33 @@ section {
 
 .titleAccount {
     margin: 20px;
+}
+
+div.backFilm > a > img:hover {
+    margin-top: 10px;
+    background-color: #121212;
+}
+
+div.backFilm > a:hover{
+    background-color: #121212;
+}
+
+.size15 {
+    font-size: 15px;
+}
+
+#createAccount {
+    border: 1px solid #555555;
+    border-radius: 10px 10px;
+}
+
+#logo_IMDb2 {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 100px;
+}
+
+#new {
+    margin-top: 30px;
 }

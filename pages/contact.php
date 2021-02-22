@@ -8,7 +8,7 @@ include "../_partials/menu.php";
             <div class="flexRow titleMargin" id="titleContact">
                 <div class="borderLeft"></div>
                 <h2>Contact </h2>
-                <img id="spiderHelp" src="https://cdn.discordapp.com/attachments/689017273050202134/811904043755896902/spiderman_help-removebg-preview.png" alt="Spider-Man help">
+                <img id="spiderHelp" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/movies_art_mas_dsk_06.jpg" alt="Spider-Man help">
             </div>
         <div id="containerContact">
             <form method="post" action="../public/save.php" class="flexColumn">
