@@ -1,21 +1,16 @@
 // menu deroulant
 
-
-
-
-
-
 let menu = document.getElementById("menu");
 let modal = document.getElementById("modal");
 let closeModal = document.getElementById("closeModal");
 
 menu.addEventListener("click", function () {
     modal.style.display = "flex";
-})
+});
 
 closeModal.addEventListener("click", function () {
     modal.style.display = "none";
-})
+});
 
 let movies = ["Release Calendar", "DVD & Blu-ray Releases", "Top Rated Movies", "Most Popular Movies", "Browse Movies by Genre", "Top Box Office", "Showtimes & Tickets", "In Theaters", "Coming Soon", "Movie News", "India Movie Spotlight"];
 let titleMovies = document.getElementById("movies");
@@ -28,13 +23,13 @@ for (let i = 0; i < movies.length; i++) {
     titleMovies.appendChild(linkMovies);
 }
 
-let TVShows = ["What's on TV & Streaming", "Top Rated Shows", "Most Popular Shows", "Browse TV Shows by Genre", "TV News", "India TV Spotlight"];
+let tvShows = ["What's on TV & Streaming", "Top Rated Shows", "Most Popular Shows", "Browse TV Shows by Genre", "TV News", "India TV Spotlight"];
 let titleTV = document.getElementById("TVShows");
 
-for (let i = 0; i < TVShows.length; i++) {
+for (let i = 0; i < tvShows.length; i++) {
     let link = document.createElement("a");
     link.id = "linkTVShows"+[i];
-    link.innerHTML = TVShows[i];
+    link.innerHTML = tvShows[i];
     link.href = "#";
     titleTV.appendChild(link);
 }
@@ -84,6 +79,196 @@ for (let i = 0; i < community.length; i++) {
 }
 
 
+// Responsive menu
+let modalResponsive = document.getElementById("menuResponsive2");
+
+document.getElementById("menuResponsive").addEventListener("click", function () {
+    modalResponsive.style.display = "block";
+});
+
+document.getElementById("closeMenuResponsive").addEventListener("click", function () {
+    modalResponsive.style.display = "none";
+});
+
+
+
+let movies2 = ["Release Calendar", "Top Rated Movies", "Most Popular Movies", "Top Box Office", "Showtimes & Tickets", "Coming Soon", "Movie News", "India Movie Spotlight"];
+let contenuMovies = document.getElementById("contenuMovies");
+
+for (let i = 0; i < movies2.length; i++) {
+    let link = document.createElement("a");
+    link.innerHTML = movies2[i];
+    link.style.width = "100%";
+    link.style.padding = "10px 0";
+    link.href = "#";
+    contenuMovies.appendChild(link);
+}
+
+let nbClick0 = 0;
+$("#moviesResponsive").click( function () {
+    if (nbClick0 === 0) {
+        $("#contenuMovies").css("display", "flex");
+        $("#moviesResponsive").css("color", "#E62A04");
+        $("#arrow-top").html("<i class=\"fas fa-angle-up\"></i>");
+        nbClick0++;
+    }
+    else {
+        $("#contenuMovies").css("display", "none");
+        $("#moviesResponsive").css("color", "white");
+        $("#arrow-top").html("<i class=\"fas fa-angle-down\"></i>");
+        nbClick0 = 0;
+    }
+});
+
+
+let tvShows2 = ["What's on TV & Streaming", "Top Rated Shows", "Most Popular Shows", "TV News", "India TV Spotlight"];
+let contenuTvShows = document.getElementById("contenuTvShows");
+
+for (let i = 0; i < tvShows2.length; i++) {
+    let link = document.createElement("a");
+    link.innerHTML = tvShows2[i];
+    link.style.width = "100%";
+    link.style.padding = "10px 0";
+    link.href = "#";
+    contenuTvShows.appendChild(link);
+}
+
+let nbClick01 = 0;
+
+$("#tvShowsResponsive").click( function () {
+    if (nbClick01 === 0) {
+        $("#contenuTvShows").css("display", "flex");
+        $("#tvShowsResponsive").css("color", "#E62A04");
+        $("#arrow-top2").html("<i class=\"fas fa-angle-up\"></i>");
+        nbClick01++;
+    }
+    else {
+        $("#contenuTvShows").css("display", "none");
+        $("#tvShowsResponsive").css("color", "white");
+        $("#arrow-top2").html("<i class=\"fas fa-angle-down\"></i>");
+        nbClick01 = 0;
+    }
+});
+
+let watch2 = ["Watch to Watch", "Latest Trailers", "IMDb Originals", "Imdb Picks", "IMDb Podcasts"];
+let contenuWatch = document.getElementById("contenuWatch");
+
+for (let i = 0; i < watch2.length; i++) {
+    let link = document.createElement("a");
+    link.innerHTML = watch2[i];
+    link.style.width = "100%";
+    link.style.padding = "10px 0";
+    link.href = "#";
+    contenuWatch.appendChild(link);
+}
+
+let nbClick02 = 0;
+
+$("#watchResponsive").click( function () {
+    if (nbClick02 === 0) {
+        $("#contenuWatch").css("display", "flex");
+        $("#watchResponsive").css("color", "#E62A04");
+        $("#arrow-top3").html("<i class=\"fas fa-angle-up\"></i>");
+        nbClick02++;
+    }
+    else {
+        $("#contenuWatch").css("display", "none");
+        $("#watchResponsive").css("color", "white");
+        $("#arrow-top3").html("<i class=\"fas fa-angle-down\"></i>");
+        nbClick02 = 0;
+    }
+});
+
+let awardEvents2 = ["Oscars", "Best Picture Winners", "Golden Globes", "Emmys", "Black History Month", "STARmeter Awards", "San Diego Comic-Con", "New-York Comic-Con", "Sundance Film Festival", "Toronto Int'l Film Festival", "Awards Central", "Festival Central", "All Events"];
+let contenuAwards = document.getElementById("contenuAwards");
+
+for (let i = 0; i < awardEvents2.length; i++) {
+    let link = document.createElement("a");
+    link.innerHTML = awardEvents2[i];
+    link.style.width = "100%";
+    link.style.padding = "10px 0";
+    link.href = "#";
+    contenuAwards.appendChild(link);
+}
+
+let nbClick03 = 0;
+
+$("#awardsEventsResponsive").click( function () {
+    if (nbClick03 === 0) {
+        $("#contenuAwards").css("display", "flex");
+        $("#awardsEventsResponsive").css("color", "#E62A04");
+        $("#arrow-top4").html("<i class=\"fas fa-angle-up\"></i>");
+        nbClick03++;
+    }
+    else {
+        $("#contenuAwards").css("display", "none");
+        $("#awardsEventsResponsive").css("color", "white");
+        $("#arrow-top4").html("<i class=\"fas fa-angle-down\"></i>");
+        nbClick03 = 0;
+    }
+});
+
+let celebs2 = ["Born Today", "Most Popular Celebs", "Celebrity News"];
+let contenuCelebs = document.getElementById("contenuCelebs");
+
+for (let i = 0; i < celebs2.length; i++) {
+    let link = document.createElement("a");
+    link.innerHTML = celebs2[i];
+    link.style.width = "100%";
+    link.style.padding = "10px 0";
+    link.href = "#";
+    contenuCelebs.appendChild(link);
+}
+
+let nbClick04 = 0;
+
+$("#celebsResponsive").click( function () {
+    if (nbClick04 === 0) {
+        $("#contenuCelebs").css("display", "flex");
+        $("#celebsResponsive").css("color", "#E62A04");
+        $("#arrow-top5").html("<i class=\"fas fa-angle-up\"></i>");
+        nbClick04++;
+    }
+    else {
+        $("#contenuCelebs").css("display", "none");
+        $("#celebsResponsive").css("color", "white");
+        $("#arrow-top5").html("<i class=\"fas fa-angle-down\"></i>");
+        nbClick04 = 0;
+    }
+});
+
+let community2 = ["Help Center", "Contributor Zone", "Polls"];
+let contenuCommunity = document.getElementById("contenuCommunity");
+
+for (let i = 0; i < community2.length; i++) {
+    let link = document.createElement("a");
+    link.innerHTML = community2[i];
+    link.style.width = "100%";
+    link.style.padding = "10px 0";
+    link.href = "#";
+    contenuCommunity.appendChild(link);
+}
+
+let nbClick05 = 0;
+
+$("#communityResponsive").click( function () {
+    if (nbClick05 === 0) {
+        $("#contenuCommunity").css("display", "flex");
+        $("#communityResponsive").css("color", "#E62A04");
+        $("#arrow-top6").html("<i class=\"fas fa-angle-up\"></i>");
+        nbClick05++;
+    }
+    else {
+        $("#contenuCommunity").css("display", "none");
+        $("#communityResponsive").css("color", "white");
+        $("#arrow-top6").html("<i class=\"fas fa-angle-down\"></i>");
+        nbClick05 = 0;
+    }
+});
+
+
+
+
 // Top picks, utiliser Jquery
 let filmsTopPicks = [
     {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersinfinitywar_lob_crd_02_1.jpg", "trailer" : "https://www.youtube.com/watch?v=6ZfuNTqbHE8", "star" : 4.4, "title" : "Avengers : Infinity War (2018)"},
@@ -106,17 +291,17 @@ for (let i = 0; i < filmsTopPicks.length; i++) {
 }
 
 //Allows you to make the container appear or disappear, containing the films
-let nbClik = 0;
+let nbClick = 0;
 $("#topPicks1").click(function () {
-    if (nbClik === 0) {
+    if (nbClick === 0) {
         $("#containerTopPicks").css("display", "none");
-        nbClik++;
+        nbClick++;
     }
     else {
         $("#containerTopPicks").css("display", "flex");
-        nbClik = 0;
+        nbClick = 0;
     }
-})
+});
 
 
 // Chronological movies marvel
@@ -160,17 +345,17 @@ for (let i = 0; i < chronology.length; i++) {
     );
 }
 
-let nbClik2 = 0;
+let nbClick2 = 0;
 $("#avengers").click(function () {
-    if (nbClik2 === 0) {
+    if (nbClick2 === 0) {
         $("#containerChronology").css("display", "none");
-        nbClik2++;
+        nbClick2++;
     }
     else {
         $("#containerChronology").css("display", "flex");
-        nbClik2 = 0;
+        nbClick2 = 0;
     }
-})
+});
 
 let chronologyXmen = [
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.RwsWbtBY6uBQS1cSr0be-AAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=kyQKi5-k0UU", "title" : "X-Men : First Class  (2011)"},
@@ -200,17 +385,17 @@ for (let i = 0; i < chronologyXmen.length; i++) {
     );
 }
 
-let nbClik3 = 0;
+let nbClick3 = 0;
 $("#xMen").click(function () {
-    if (nbClik3 === 0) {
+    if (nbClick3 === 0) {
             $("#containerXmen").css("display", "none");
-        nbClik3++;
+        nbClick3++;
     }
     else {
         $("#containerXmen").css("display", "flex");
-        nbClik3 = 0;
+        nbClick3 = 0;
     }
-})
+});
 
 // Fantastic 4
 let chronologyFantastic = [
@@ -231,17 +416,17 @@ for (let i = 0; i < chronologyFantastic.length; i++){
     );
 }
 
-let nbClik4 = 0;
+let nbClick4 = 0;
 $("#fantastic4").click(function () {
-    if (nbClik4 === 0) {
+    if (nbClick4 === 0) {
         $("#containerFantastic").css("display", "none");
-        nbClik4++;
+        nbClick4++;
     }
     else {
         $("#containerFantastic").css("display", "flex");
-        nbClik4 = 0;
+        nbClick4 = 0;
     }
-})
+});
 
 // Spider-Man
 let chronologySpiderMan = [
@@ -262,17 +447,17 @@ for (let i = 0; i < chronologySpiderMan.length; i++) {
     );
 }
 
-let nbClik5 = 0;
+let nbClick5 = 0;
 $("#spiderMan").click(function () {
-    if (nbClik5 === 0) {
+    if (nbClick5 === 0) {
         $("#containerSpiderMan").css("display", "none");
-        nbClik5++;
+        nbClick5++;
     }
     else {
         $("#containerSpiderMan").css("display", "flex");
-        nbClik5 = 0;
+        nbClick5 = 0;
     }
-})
+});
 
 // The amazing Spider-Man
 let chronologyAmazingSpiderMan = [
@@ -292,17 +477,17 @@ for (let i = 0; i < chronologyAmazingSpiderMan.length; i++) {
     );
 }
 
-let nbClik6 = 0;
+let nbClick6 = 0;
 $("#amazingSpiderMan").click(function () {
-    if (nbClik6 === 0) {
+    if (nbClick6 === 0) {
         $("#containerAmazingSpiderMan").css("display", "none");
-        nbClik6++;
+        nbClick6++;
     }
     else {
         $("#containerAmazingSpiderMan").css("display", "flex");
-        nbClik6 = 0;
+        nbClick6 = 0;
     }
-})
+});
 
 // All other Marvel movies
 let chronologyMarvelAll = [
@@ -330,17 +515,17 @@ for (let i = 0; i < chronologyMarvelAll.length; i++) {
     );
 }
 
-let nbClik7 = 0;
+let nbClick7 = 0;
 $("#marvelAll").click(function () {
-    if (nbClik7 === 0) {
+    if (nbClick7 === 0) {
         $("#containerFilmAll").css("display", "none");
-        nbClik7++;
+        nbClick7++;
     }
     else {
         $("#containerFilmAll").css("display", "flex");
-        nbClik7 = 0;
+        nbClick7 = 0;
     }
-})
+});
 
 // Coming Soon to theaters
 let comingSoon = [
@@ -386,4 +571,3 @@ password.addEventListener("change", checkPassword);
 passwordConfirm.addEventListener("keyup", checkPassword);
 
 
-// Responsive menu

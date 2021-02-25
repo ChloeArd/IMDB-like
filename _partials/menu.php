@@ -1,24 +1,25 @@
 <header>
+
+    <!-- Menu responsive -->
     <a href="#" id="menuResponsive"><i class="fas fa-bars"></i></a>
     <div id="menuResponsive2" class="flexColumn">
         <div class="flexRow" id="topMenu">
             <button id="closeMenuResponsive" class="colorWhite size15"> x </button>
         </div>
         <hr class="dropdown-divider">
-        <ul class="dropdown-menu">
-            <li><a id="search-All" href="#"><i class="fas fa-film red"></i>Movies</a></li>
-            <li><a href="#"><i class="fas fa-film"></i> Titles</a></li>
-            <li><a  href="#"><i class="fas fa-tv"></i> TV Episodes</a></li>
-            <li><a href="#"><i class="fas fa-user-friends"></i> Celebs</a></li>
-            <li><a href="#"><i class="far fa-building"></i> Companies</a></li>
-            <li><a  href="#"> <i class="far fa-keyboard"></i> Keywords</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li ><a  href="#"><i class="fas fa-search-plus"></i> Advanced Search ></a></li>
-        </ul>
+        <button id="moviesResponsive"><i class="fas fa-film red"></i>Movies <span id="arrow-top"><i class="fas fa-angle-down"></i></span></button>
+        <div id="contenuMovies" class="flexColumn"></div>
+        <button id="tvShowsResponsive"><i class="fas fa-tv red"></i>TV Shows <span id="arrow-top2"><i class="fas fa-angle-down"></i></span></button>
+        <div id="contenuTvShows" class="flexColumn"></div>
+        <button id="watchResponsive"><i class="fas fa-play-circle red"></i>Watch <span id="arrow-top3"><i class="fas fa-angle-down"></i></span></button>
+        <div id="contenuWatch" class="flexColumn"></div>
+        <button id="awardsEventsResponsive"><i class="far fa-star red"></i>Awards & Events <span id="arrow-top4"><i class="fas fa-angle-down"></i></span></button>
+        <div id="contenuAwards" class="flexColumn"></div>
+        <button id="celebsResponsive"><i class="fas fa-user-friends red"></i>Celebs <span id="arrow-top5"><i class="fas fa-angle-down"></i></span></button>
+        <div id="contenuCelebs" class="flexColumn"></div>
+        <button id="communityResponsive"><i class="fas fa-globe-europe red"></i>Community <span id="arrow-top6"><i class="fas fa-angle-down"></i></span></button>
+        <div id="contenuCommunity" class="flexColumn"></div>
     </div>
-
-
-
 
 
     <a href="../pages/index.php"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/813127452494397440/logo_small.png" alt="logo IMDb"></a>

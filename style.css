@@ -73,8 +73,8 @@ i {
     margin: 0 8px;
 }
 
-li > a > i {
-    color: #555555;
+li > a > i, #tvShowsResponsive > i, #moviesResponsive > i, #watchResponsive > i, #awardsEventsResponsive > i, #celebsResponsive > i, #communityResponsive > i {
+    color: grey;
     margin: 0 8px;
 }
 
@@ -491,7 +491,12 @@ div.backFilm > a > img:hover {
     margin-top: 30px;
 }
 
+#menuResponsive {
+    display: none;
+}
+
 #menuResponsive2 {
+    display: none;
     top: 0;
     left: 0;
     position: absolute;
@@ -500,6 +505,7 @@ div.backFilm > a > img:hover {
     height: 100%;
     background-color: #252525;
     box-shadow: 5px 5px 5px black;
+    padding: 10px;
 }
 
 #closeMenuResponsive {
@@ -510,9 +516,23 @@ div.backFilm > a > img:hover {
     padding: 12px;
 }
 
+#tvShowsResponsive, #moviesResponsive, #watchResponsive, #awardsEventsResponsive, #celebsResponsive, #communityResponsive {
+    background-color: transparent;
+    border: transparent;
+    font-size: 18px;
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    width: 100%;
+}
+
 #topMenu {
     justify-content: flex-end;
     padding: 5px;
+}
+
+#contenuMovies, #contenuTvShows, #contenuWatch, #contenuAwards, #contenuCelebs, #contenuCommunity {
+    display: none;
 }
 
 
@@ -532,7 +552,9 @@ div.backFilm > a > img:hover {
     a {
         width: 18%;
     }
-
+    #menuResponsive {
+        display: block;
+    }
 
 
 }
