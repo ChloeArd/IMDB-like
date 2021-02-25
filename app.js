@@ -181,9 +181,10 @@ let chronologyXmen = [
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.w3DYONspOd7QVqdWEAMZmQHaKj&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=g7kdUy5_WlI", "title" : "The Wolverine (2013)"},
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.I4wpWLxu2P-jep1I4Th8KwHaJ3&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=pK2zYHWDZKo", "title" : "X-Men : Days of Future Past (2014)"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.H4Gc8G4mlyjj5xJagqITjQHaKj&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=COvnHv42T-A", "title" : "X-Men : Apocalypse (2016)"},
+    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.i6PaHWEJYYMxYhpunHVGXgHaKz&pid=Api&P=0&w=300&h=300", "trailer": "https://www.youtube.com/watch?v=1-q8C_c-nlM", "title" : "X-Men : Dark Phoenix (2019)"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.ng61IWqtUV9bxuw7P78QJwAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=gtTfd6tISfw", "title" : "Deadpool (2016)"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.ND-EK9l01qVW9PuV5u4eDAHaK8&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=D86RtevtfrA", "title" : "Deadpool 2 (2018)"},
-    {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.i6PaHWEJYYMxYhpunHVGXgHaKz&pid=Api&P=0&w=300&h=300", "trailer": "https://www.youtube.com/watch?v=1-q8C_c-nlM", "title" : "X-Men : Dark Phoenix (2019)"},
+    {"imageSrc" : "https://tse2.explicit.bing.net/th?id=OIP.JkRh8cW8DxZmcCZUbukx5QHaLG&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=Div0iP65aZo", "title" : "Logan (2017)"},
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.lao4-o4Si6QeTRnDrYtbHQAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=W_vJhUAOFpI", "title" : "The New Mutants (2020)"},
 ];
 
@@ -306,7 +307,6 @@ $("#amazingSpiderMan").click(function () {
 // All other Marvel movies
 let chronologyMarvelAll = [
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.ENKg9Z5SYaGDPmz3Ls5XdAHaKj&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=u9Mv98Gr5pY", "title" : "Venom (2018)"},
-    {"imageSrc" : "https://tse2.explicit.bing.net/th?id=OIP.JkRh8cW8DxZmcCZUbukx5QHaLG&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=Div0iP65aZo", "title" : "Logan (2017)"},
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.EZtUdfhWXeO8Fde5d1peAAHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=ZFHyPLaENRE", "title" : "Ghost rider : Spirit of Vengeance (2012)"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.IXD9b-Wh6h-GKDDF5hGt0gHaK_&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=wkxLWWiz5O8", "title" : "Punisher 2 : War Zone (2009)"},
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.01dG2V8RrhPLCxEonp9pvwHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=tp12CD2A4NA", "title" : "Ghost rider (2007)"},
@@ -386,3 +386,4 @@ password.addEventListener("change", checkPassword);
 passwordConfirm.addEventListener("keyup", checkPassword);
 
 
+// Responsive menu

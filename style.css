@@ -384,7 +384,7 @@ p {
     height: 40px;
 }
 
-#containerChronology, #containerXmen, #containerNextFilm, #containerAmazingSpiderMan, #containerFantastic, #containerFilmAll, #containerSpiderMan, #containerComingSoon {
+#containerChronology, #containerXmen, #containerNextFilm, #containerAmazingSpiderMan, #containerFantastic, #containerFilmAll, #containerSpiderMan, #containerComingSoon, #containerTopPicks {
     flex-wrap: wrap;
 }
 
@@ -490,3 +490,50 @@ div.backFilm > a > img:hover {
 #new {
     margin-top: 30px;
 }
+
+#menuResponsive2 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 9999;
+    width: 25%;
+    height: 100%;
+    background-color: #252525;
+    box-shadow: 5px 5px 5px black;
+}
+
+#closeMenuResponsive {
+    text-align: center;
+    border: transparent;
+    background-color: transparent;
+    width: 10%;
+    padding: 12px;
+}
+
+#topMenu {
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 1120px) {
+    main {
+        width: 97%;
+    }
+    #carouselExampleDark {
+        width: 100%;
+    }
+    #nextFilm, #watchlist, #menu{
+        display: none;
+    }
+    .backFilm {
+        width: 20%;
+    }
+    a {
+        width: 18%;
+    }
+
+
+
+}
+

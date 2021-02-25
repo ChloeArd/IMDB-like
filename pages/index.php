@@ -68,7 +68,7 @@ include "../_partials/menu.php";
             </div>
 
             <div id="nextFilm">
-                <h3 class="red">Up next</h3>
+                <h3 id="upNext2" class="red">Up next</h3>
                 <div id="containerNextFilm" class="flexColumn">
                     <div class="filmsNext flexRow">
                         <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/ant-man_lob_crd_01_8.jpg" alt="Film Ant-Man">
@@ -129,7 +129,7 @@ include "../_partials/menu.php";
                 <i class="fas fa-plus-circle"></i>
                 <h3 class="colorWhite">Sign in to access your Watchlist</h3>
                 <h4 class="colorGrey"> Save shows and movies to keep track of what you want to watch</h4>
-                <a class="buttonRed" href="../pages/account.php"> Sign in to IMDb > </a>
+                <a class="buttonRed" href="../pages/account.php"> Sign in to IMDb Marvel > </a>
             </div>
         </div>
 
