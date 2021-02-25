@@ -22,5 +22,3 @@ include "../_partials/header.php";
         </form>
         <p class="size15">Already have an account? <a href="signIn.php" class="linkBlue">Sign-In</a></p>
     </section>
-
-

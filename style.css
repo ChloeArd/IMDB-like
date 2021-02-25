@@ -463,13 +463,12 @@ section {
     margin: 20px;
 }
 
-div.backFilm > a > img:hover {
-    margin-top: 10px;
+div.backFilm > a:hover{
     background-color: #121212;
 }
 
-div.backFilm > a:hover{
-    background-color: #121212;
+div.backFilm > a > img:hover {
+    margin-top: 10px;
 }
 
 .size15 {

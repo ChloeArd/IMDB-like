@@ -112,7 +112,7 @@ include "../_partials/menu.php";
                     <h4 class="colorGrey">Most Viewed and Recommended Marvel Movies</h4>
                 </div>
             </a>
-            <a href="#" class="linkBlue size15">Sign in</a>
+            <a href="account.php" class="linkBlue size15">Sign in</a>
 
             <div id="containerTopPicks" class="flexRow">
 

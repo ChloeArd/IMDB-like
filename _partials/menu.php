@@ -2,7 +2,7 @@
     <a href="../pages/index.php"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/813127452494397440/logo_small.png" alt="logo IMDb"></a>
     <a href="#" id="menu"><i class="fas fa-bars"></i>Menu</a>
     <div id="inputs" class="input-group mb-3">
-        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="titleMenu" aria-expanded="false">All</button>
         <ul id="menuDeroulant" class="dropdown-menu">
             <li><a id="search-All" href="#"><i class="fas fa-search red"></i>All</a></li>
             <li><a href="#"><i class="fas fa-film"></i> Titles</a></li>
@@ -11,7 +11,7 @@
             <li><a href="#"><i class="far fa-building"></i> Companies</a></li>
             <li><a  href="#"> <i class="far fa-keyboard"></i> Keywords</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a  href="#"><i class="fas fa-search-plus"></i> Advanced Search > </a></li>
+            <li ><a  href="#"><i class="fas fa-search-plus"></i> Advanced Search > </a></li>
         </ul>
         <input id="search_IMDb" type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search IMDb">
         <button id="enter" class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>

@@ -19,7 +19,6 @@ include "../_partials/menu.php";
         </section>
     </main>
 
-
 <?php
 include "../_partials/footer.php";
 ?>

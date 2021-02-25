@@ -1,6 +1,7 @@
-//API Marvel
-let url = "http://gateway.marvel.com/v1/public/comics?ts=1&apikey=0b394d7cce565e8a775140fddd806bd1&hash=2d964b672c4c9fe9360ed571a9184646";
-console.log(url);
+// menu deroulant
+
+
+
 
 
 
@@ -89,7 +90,7 @@ let filmsTopPicks = [
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.dXkLdHXowR5VL8j6DdCwFAHaK9&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=TcMBFSGVi1c", "star" : 4.2, "title" : "Avengers : Endgame"},
     {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/guardiansofthegalaxy_lob_crd_03.jpg", "trailer" : "https://www.youtube.com/watch?v=d96cjJhvlMA", "star" : 4.2, "title" : "Guardians of the Galaxy"},
     {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/theavengers_lob_crd_03.jpg", "trailer" : "https://www.youtube.com/watch?v=eOrNdBpGMv8", "star" : 4.2, "title" : "Avengers"},
-    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.RAxOsPPR7Yj9deu4JOK7HQHaK-&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=dW1BIid8Osg", "star" : 4.1, "title" : "Guardians of the Galaxie vol.2"},
+    {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/guardiansofthegalaxyvol.2_lob_crd_01.jpg", "trailer" : "https://www.youtube.com/watch?v=dW1BIid8Osg", "star" : 4.1, "title" : "Guardians of the Galaxie vol.2"},
     {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman_lob_crd_01_3.jpg", "trailer" : "https://www.youtube.com/watch?v=8ugaeA-nMTc", "star" : 4, "title" : "Iron Man"}
 ];
 
@@ -151,7 +152,7 @@ for (let i = 0; i < chronology.length; i++) {
     let number = i + 1;
     $("#containerChronology").append(
         "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
-            "<a href='" + chronology[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronology[i].imageSrc +"'></a>" +
+            "<a href='" + chronology[i].trailer + "' class='images'><img class='imageFilmTopPicks' src='"+ chronology[i].imageSrc +"'></a>" +
             "<span class='number'>" + number + "</span>" +
             "<a href='" + chronology[i].trailer + "' class='title'>" + chronology[i].title + "</a>" +
             "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
@@ -304,7 +305,7 @@ $("#amazingSpiderMan").click(function () {
 
 // All other Marvel movies
 let chronologyMarvelAll = [
-    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.e4DuiSbUNtg46Yz9YjoU5AHaKC&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=u9Mv98Gr5pY", "title" : "Venom (2018)"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.ENKg9Z5SYaGDPmz3Ls5XdAHaKj&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=u9Mv98Gr5pY", "title" : "Venom (2018)"},
     {"imageSrc" : "https://tse2.explicit.bing.net/th?id=OIP.JkRh8cW8DxZmcCZUbukx5QHaLG&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=Div0iP65aZo", "title" : "Logan (2017)"},
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.EZtUdfhWXeO8Fde5d1peAAHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=ZFHyPLaENRE", "title" : "Ghost rider : Spirit of Vengeance (2012)"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.IXD9b-Wh6h-GKDDF5hGt0gHaK_&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=wkxLWWiz5O8", "title" : "Punisher 2 : War Zone (2009)"},
@@ -346,7 +347,7 @@ let comingSoon = [
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.lcXgv2CJFIoncCR6OIDRKwHaK-&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=RxAtuMu_ph4", "title" : "Black Widow", "exit" : "May 5, 2021"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.yd_Gp5mcIftqVSAtr4qR5QAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=jSnc8Mt_EEI", "title" : "Shang-Chi and the Legend of the Ten Rings", "exit" : "July 7, 2021"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.iPxwjvKtXcvvadzxA54-ygHaIs&pid=Api&P=0&w=300&h=300", "title" : "Eternals", "exit" : "November 5, 2021"},
-    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.8K2PD4xXb2FehPcm5VkYXAAAAA&pid=Api&P=0&w=300&h=300", "title" : "Spider-Man : ...", "exit" : "December 15, 2021"},
+    {"imageSrc" : "https://m.media-amazon.com/images/M/MV5BNTMxOGI4OGMtMTgwMy00NmFjLWIyOTUtYjQ0OGQ4Mjk0YjNjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg", "trailer" : "https://www.youtube.com/watch?v=M0NioMJ7SMg", "title" : "Spider-Man : No Way Home", "exit" : "December 15, 2021"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.qSaqgX7yqXKQrMfT9OnxLgHaK-&pid=Api&P=0&w=300&h=300", "title" : "Doctor Strange in the Multiverse of Madness", "exit" : "March 23, 2022"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.msYo9IrII3mMPJ0EIP7whwHaLB&pid=Api&P=0&w=300&h=300", "title" : "Thor : Love and Thunder", "exit" : "May 4, 2022"},
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.2vT-uIH0MP4kH8YeQoZjNgHaLA&pid=Api&P=0&w=300&h=300", "title" : "Black Panther 2", "exit" : "July 6, 2022"},
