@@ -550,12 +550,29 @@ div.backFilm > a > img:hover {
         width: 20%;
     }
     a {
-        width: 18%;
+        width: 25%;
     }
     #menuResponsive {
         display: block;
     }
+}
 
-
+@media screen and (max-width: 1120px) {
+    a {
+        font-size: 20px;
+        width: 45%;
+    }
+    #search_IMDb{
+        font-size: 20px;
+    }
+    footer {
+        padding: 20px 150px ;
+    }
+    .titleAccount {
+        font-size: 30px;
+    }
+    #buttonSignIn, #buttonSignUp {
+        font-size: 25px;
+    }
 }
 

@@ -5,13 +5,13 @@ include "../_partials/menu.php";
 ?>
 
     <main class="flexColumn">
-            <div class="flexRow titleMargin" id="titleContact">
-                <div class="borderLeft"></div>
-                <h2>Contact </h2>
-                <img id="spiderHelp" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/movies_art_mas_dsk_06.jpg" alt="Spider-Man help">
-            </div>
+        <div class="flexRow titleMargin" id="titleContact">
+            <div class="borderLeft"></div>
+            <h2>Contact </h2>
+            <img id="spiderHelp" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/movies_art_mas_dsk_06.jpg" alt="Spider-Man help">
+        </div>
         <div id="containerContact">
-            <form method="post" action="../public/save.php" class="flexColumn">
+            <form id="formContact" method="post" action="../public/save.php" class="flexColumn">
                 <label for="name" class="colorRed" >Last name :</label>
                 <input type="text" name="name" id="name" class="colorRed" required>
                 <label for="vorname" class="colorRed" >First name:</label>
