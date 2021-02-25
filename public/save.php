@@ -3,7 +3,7 @@
 $lastName = htmlentities(trim($_POST["name"]));
 $vorName = htmlentities(trim($_POST["vorname"]));
 
-$to = "chloe.ardoise@gmail.com"; //service.IMDbMarvel@gmail.com
+$to = "service.IMDbMarvel@gmail.com"; //service.IMDbMarvel@gmail.com
 $from      = trim($_POST["email"]);
 $subject = htmlentities(trim($_POST["subject"]));
 $message = htmlentities(trim($_POST["message"]));
