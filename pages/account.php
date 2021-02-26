@@ -15,7 +15,7 @@ include "../_partials/menu.php";
 
         <section id="createAccount2" class="flexColumn">
             <h2 class="colorBlack titleAccount">Sign up</h2>
-            <a id="buttonSignUp" href="signUp.php" class="buttonRed">Create a new account</a>
+            <a id="buttonSignUp" href="signUp.php" class="buttonBlack">Create a new account</a>
         </section>
     </main>
 

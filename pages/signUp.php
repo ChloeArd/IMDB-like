@@ -20,5 +20,5 @@ include "../_partials/header.php";
             <input type="password" name="repeatPassword" id="repeatPassword" class="colorRed" required >
             <input id="signUp" type="submit" value="Sign up" class="colorWhite buttonRed">
         </form>
-        <p class="size15">Already have an account? <a href="signIn.php" class="linkBlue">Sign-In</a></p>
+        <p id="linkSignIn" class="size15">Already have an account? <a href="signIn.php" class="linkBlue">Sign-In</a></p>
     </section>

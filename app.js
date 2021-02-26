@@ -283,7 +283,7 @@ for (let i = 0; i < filmsTopPicks.length; i++) {
     $("#containerTopPicks").append(
         "<div id='filmTopPick" + [i] + "' class='flexColumn backFilm'>" +
         "<a href='" + filmsTopPicks[i].trailer + "'><img class='imageFilmTopPicks' src='"+ filmsTopPicks[i].imageSrc +"'></a>" +
-        "<span><i class='fas fa-star red'></i>" + filmsTopPicks[i].star + "</span>" +
+        "<span class='star'><i class='fas fa-star red'></i>" + filmsTopPicks[i].star + "</span>" +
         "<a href='" + filmsTopPicks[i].trailer + "' class='title'>" + filmsTopPicks[i].title + "</a>" +
         "<a href='#' class='watchList' id='filmWatchList" + [i] + "'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
         "</div>"

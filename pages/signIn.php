@@ -15,5 +15,5 @@ include "../_partials/header.php";
             <input id="signIn2" type="submit" value="Sign in" class="colorWhite buttonRed">
         </form>
         <span id="new" class="colorGrey size15">New to IMDb Marvel ?</span>
-        <a href="signUp.php" class="buttonBlack">Create you IMDb Marvel account</a>
+        <a id="buttonCreateAccount" href="signUp.php" class="buttonBlack">Create you IMDb Marvel account</a>
     </section>

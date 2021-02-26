@@ -536,7 +536,10 @@ div.backFilm > a > img:hover {
 }
 
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1160px) {
+    header {
+        padding: 0;
+    }
     main {
         width: 97%;
     }
@@ -557,22 +560,104 @@ div.backFilm > a > img:hover {
     }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 900px) {
     a {
         font-size: 20px;
-        width: 45%;
+        width: 100%;
     }
     #search_IMDb{
         font-size: 20px;
     }
     footer {
-        padding: 20px 150px ;
+        padding: 20px 100px ;
     }
     .titleAccount {
-        font-size: 30px;
+        font-size: 40px;
+        color: white;
     }
     #buttonSignIn, #buttonSignUp {
+        font-size: 30px;
+        width: 140%;
+        text-align: center;
+    }
+    #account {
+        flex-direction: column;
+        background-image: none;
+    }
+    #amazon, #end, #new, h5, .star {
+        font-size: 20px;
+    }
+    #passwordSignIn, #usernameSignIn, #name, #email, #usernameSignUp, #passwordSignUp, #repeatPassword {
+        font-size: 60px;
+        height: 70px;
+    }
+    .formAccount > label, #signIn2, #signUp {
+        font-size: 30px;
+        height: auto;
+    }
+    #createAccount, #buttonCreateAccount {
+        width: 90%;
+    }
+    #buttonCreateAccount, #linkSignIn, .linkBlue, .number {
+        font-size: 30px;
+    }
+    .watchList, .buttonRed, h4 {
         font-size: 25px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    #whatToWatch {
+        flex-direction: column;
+    }
+    .backFilm {
+        width: 160px;
+    }
+    #carouselExampleDark, .d-block {
+        height: 300px;
+    }
+    #titleMenu, #search_IMDb {
+        display: none;
+    }
+    #signIn, #createAccount {
+        width: initial;
     }
 }
 
+@media screen and (max-width: 700px) {
+    footer {
+        padding: 0;
+    }
+    header {
+        height: 100px;
+    }
+    #passwordSignIn, #usernameSignIn, #name, #email, #usernameSignUp, #passwordSignUp, #repeatPassword {
+        font-size: 25px;
+        height: 35px;
+    }
+    .formAccount > label, #signIn2, #signUp {
+        font-size: 15px;
+        height: auto;
+    }
+    #createAccount, #buttonCreateAccount {
+        width: 90%;
+    }
+    #buttonCreateAccount, #linkSignIn, .linkBlue, .number, #buttonSignUp, #buttonSignIn, a {
+        font-size: 15px;
+    }
+    .titleAccount {
+        font-size: 20px;
+    }
+    #menuResponsive2 {
+        width: 70%;
+    }
+    form#formContact {
+        padding: 0;
+    }
+    #contact {
+        width: 90%;
+    }
+}
