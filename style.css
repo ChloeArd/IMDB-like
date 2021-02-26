@@ -660,4 +660,7 @@ div.backFilm > a > img:hover {
     #contact {
         width: 90%;
     }
+    #spiderHelp {
+        display: none;
+    }
 }
