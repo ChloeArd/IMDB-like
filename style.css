@@ -52,7 +52,7 @@ main {
 }
 
 #logo_IMDb {
-    width: 70px;
+    width: 100%;
 }
 
 a {
@@ -574,14 +574,18 @@ div.backFilm > a > img:hover {
     .titleAccount {
         font-size: 40px;
         color: white;
+        width: 100%;
+        text-align: center;
     }
     #buttonSignIn, #buttonSignUp {
         font-size: 30px;
         width: 140%;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
     #account {
         flex-direction: column;
+        padding: 0;
         background-image: none;
     }
     #amazon, #end, #new, h5, .star {
