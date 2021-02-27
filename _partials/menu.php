@@ -22,7 +22,7 @@
     </div>
 
 
-    <a href="../pages/index.php"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/813127452494397440/logo_small.png" alt="logo IMDb"></a>
+    <a href="../index.php"><img id="logo_IMDb" src="https://cdn.discordapp.com/attachments/689017273050202134/813127452494397440/logo_small.png" alt="logo IMDb"></a>
     <a href="#" id="menu"><i class="fas fa-bars"></i>Menu</a>
     <div id="inputs" class="input-group mb-3">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="titleMenu" aria-expanded="false">All</button>
@@ -47,7 +47,7 @@
 <!-- Fenetre modale -->
 <div id="modal">
     <div id="top" class="flexRow">
-        <a href="../pages/index.php"><img id="logo_IMDb2" src="https://cdn.discordapp.com/attachments/689017273050202134/813127452494397440/logo_small.png" alt="logo IMDb"></a>
+        <a href="../index.php"><img id="logo_IMDb2" src="https://cdn.discordapp.com/attachments/689017273050202134/813127452494397440/logo_small.png" alt="logo IMDb"></a>
         <button id="closeModal"><i class="fas fa-times"></i></button>
     </div>
 
