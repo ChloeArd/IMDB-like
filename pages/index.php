@@ -113,10 +113,7 @@ include "../_partials/menu.php";
                 </div>
             </a>
             <a href="account.php" class="linkBlue size15">Sign in</a>
-
-            <div id="containerTopPicks" class="flexRow">
-
-            </div>
+            <div id="containerTopPicks" class="flexRow"></div>
         </div>
 
         <div id="yourWatchlist" class="flexColumn">
@@ -144,10 +141,7 @@ include "../_partials/menu.php";
                 </div>
             </a>
             <h4 class="colorGrey">Chronological order for watching Avengers movies (no release date)</h4>
-
-            <div id="containerChronology" class="flexRow">
-
-            </div>
+            <div id="containerChronology" class="flexRow"></div>
         </div>
 
         <div id="chronologyFilmXmen" class="flexColumn">
@@ -159,10 +153,7 @@ include "../_partials/menu.php";
                 </div>
             </a>
             <h4 class="colorGrey">Chronological order for watching X-Men movies (no release date)</h4>
-
-            <div id="containerXmen" class="flexRow">
-
-            </div>
+            <div id="containerXmen" class="flexRow"></div>
         </div>
 
         <div id="chronologyFilmFantastic" class="flexColumn">
@@ -174,10 +165,7 @@ include "../_partials/menu.php";
                 </div>
             </a>
             <h4 class="colorGrey">Chronological order for watching Fantastic 4 movies (no release date)</h4>
-
-            <div id="containerFantastic" class="flexRow">
-
-            </div>
+            <div id="containerFantastic" class="flexRow"></div>
         </div>
 
         <div id="chronologyFilmSpiderMan" class="flexColumn">
@@ -189,10 +177,7 @@ include "../_partials/menu.php";
                 </div>
             </a>
             <h4 class="colorGrey">Chronological order for watching Spider-Man movies (no release date)</h4>
-
-            <div id="containerSpiderMan" class="flexRow">
-
-            </div>
+            <div id="containerSpiderMan" class="flexRow"></div>
         </div>
 
         <div id="chronologyFilmAmazingSpiderMan" class="flexColumn">
@@ -204,10 +189,7 @@ include "../_partials/menu.php";
                 </div>
             </a>
             <h4 class="colorGrey">Chronological order for watching The Amazing Spider-Man movies (no release date)</h4>
-
-            <div id="containerAmazingSpiderMan" class="flexRow">
-
-            </div>
+            <div id="containerAmazingSpiderMan" class="flexRow"></div>
         </div>
 
         <div id="chronologyFilmMarvelAll" class="flexColumn">
@@ -218,13 +200,10 @@ include "../_partials/menu.php";
                     <i class="fas fa-chevron-right"></i>
                 </div>
             </a>
-            <div id="containerFilmAll" class="flexRow">
-
-            </div>
+            <div id="containerFilmAll" class="flexRow"></div>
         </div>
 
         <h1 id="Explore" class="red">Explore movies & TV shows</h1>
-
 
         <div id="comingSoon" class="flexColumn">
             <div class="flexRow titleMargin">
@@ -233,9 +212,8 @@ include "../_partials/menu.php";
             </div>
             <h4 class="colorGrey">Trailers for upcoming releases</h4>
         </div>
-        <div id="containerComingSoon" class="flexRow">
 
-        </div>
+        <div id="containerComingSoon" class="flexRow"></div>
 
         <div id="recentlyViewed" class="flexColumn">
             <div class="flexRowt titleMargin">
