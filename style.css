@@ -630,6 +630,9 @@ div.backFilm > a > img:hover {
     #signIn, #createAccount {
         width: initial;
     }
+    #spiderHelp {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -664,8 +667,5 @@ div.backFilm > a > img:hover {
     }
     #contact {
         width: 90%;
-    }
-    #spiderHelp {
-        display: none;
     }
 }
