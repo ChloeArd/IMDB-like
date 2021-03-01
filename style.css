@@ -482,10 +482,17 @@ div.backFilm > a > img:hover {
 }
 
 #logo_IMDb2 {
+    width: 100px;
+}
+
+.placeLogo {
     display: flex;
     align-items: center;
     margin: 20px auto;
-    width: 100px;
+}
+
+.placeLogo:hover {
+    background-color: transparent;
 }
 
 #new {
