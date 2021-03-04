@@ -1,7 +1,7 @@
 <?php
 class DB {
 
-    private string $server = 'localhost';
+    private string $server = 'chloe.up-to.fr';
     private string $db = 'imdb_marvel';
     private string $user = 'root';
     private string $pwd = '';

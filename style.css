@@ -575,6 +575,10 @@ div.backFilm > a > img:hover {
     background-color: #555555;
 }
 
+.fa-user-edit {
+    color: #E62A04;
+}
+
 @media screen and (max-width: 1160px) {
     header {
         padding: 0;
@@ -705,5 +709,8 @@ div.backFilm > a > img:hover {
     }
     #contact {
         width: 90%;
+    }
+    #allInformationsUser {
+        width: 70%;
     }
 }
