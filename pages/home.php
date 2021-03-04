@@ -114,7 +114,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
                 <h4 class="colorGrey">Most Viewed and Recommended Marvel Movies</h4>
             </div>
         </a>
-        <a href="../account.php" class="linkBlue size15">Sign in</a>
+        <a href="../index.php" class="linkBlue size15">Sign in</a>
         <div id="containerTopPicks" class="flexRow"></div>
     </div>
 
@@ -128,7 +128,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
             <i class="fas fa-plus-circle"></i>
             <h3 class="colorWhite">Sign in to access your Watchlist</h3>
             <h4 class="colorGrey"> Save shows and movies to keep track of what you want to watch</h4>
-            <a class="buttonRed" href="../account.php"> Sign in to IMDb Marvel > </a>
+            <a class="buttonRed" href="../index.php"> Sign in to IMDb Marvel > </a>
         </div>
     </div>
 

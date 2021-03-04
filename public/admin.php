@@ -7,4 +7,4 @@ echo "The message : '" . $message->{"Message"} . "', has been sent ! <br>";
 echo "<br><br>"
 ?>
 
-<a href="../pages/index.php">Click here to return to home !</a>
+<a href="../pages/home.php">Click here to return to home !</a>

@@ -11,6 +11,6 @@ if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
     //Delete a user thanks to his id on database
     $sql = "DELETE FROM user WHERE id = $id";
     if ($bdd->exec($sql) !== false) {
-        header("Location: ../account.php");
+        header("Location: ../index.php");
     }
 }

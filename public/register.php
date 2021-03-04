@@ -25,6 +25,6 @@ if (issetPostParams("firstname", "lastname", "email", "username", "password", "r
     }
     else {
         echo "<br><br>The email is not valid! 
-        <br><a href='../account.php'> Previous page</a>";
+        <br><a href='../index.php'> Previous page</a>";
     }
 }
