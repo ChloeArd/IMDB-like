@@ -532,7 +532,7 @@ let comingSoon = [
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.lcXgv2CJFIoncCR6OIDRKwHaK-&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=RxAtuMu_ph4", "title" : "Black Widow", "exit" : "May 5, 2021"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.yd_Gp5mcIftqVSAtr4qR5QAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=jSnc8Mt_EEI", "title" : "Shang-Chi and the Legend of the Ten Rings", "exit" : "July 7, 2021"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.iPxwjvKtXcvvadzxA54-ygHaIs&pid=Api&P=0&w=300&h=300", "title" : "Eternals", "exit" : "November 5, 2021"},
-    {"imageSrc" : "https://m.media-amazon.com/images/M/MV5BNTMxOGI4OGMtMTgwMy00NmFjLWIyOTUtYjQ0OGQ4Mjk0YjNjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg", "trailer" : "https://www.youtube.com/watch?v=M0NioMJ7SMg", "title" : "Spider-Man : No Way Home", "exit" : "December 15, 2021"},
+    {"imageSrc" : "https://cdn.discordapp.com/attachments/689017273050202134/817072644956094484/image0.png", "trailer" : "https://www.youtube.com/watch?v=M0NioMJ7SMg", "title" : "Spider-Man : No Way Home", "exit" : "December 15, 2021"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.qSaqgX7yqXKQrMfT9OnxLgHaK-&pid=Api&P=0&w=300&h=300", "title" : "Doctor Strange in the Multiverse of Madness", "exit" : "March 23, 2022"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.msYo9IrII3mMPJ0EIP7whwHaLB&pid=Api&P=0&w=300&h=300", "title" : "Thor : Love and Thunder", "exit" : "May 4, 2022"},
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.2vT-uIH0MP4kH8YeQoZjNgHaLA&pid=Api&P=0&w=300&h=300", "title" : "Black Panther 2", "exit" : "July 6, 2022"},

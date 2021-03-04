@@ -1,7 +1,10 @@
 <?php
-$title = "Contact";
-include "../_partials/header.php";
-include "../_partials/menu.php";
+session_start();
+
+if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
+    $title = "IMDb Marvel Contact";
+    include "../_partials/header.php";
+    include "../_partials/menu.php";
 ?>
 
     <main class="flexColumn">
@@ -34,6 +37,7 @@ include "../_partials/menu.php";
 
 <?php
 include "../_partials/footer.php";
+}
 
 
 

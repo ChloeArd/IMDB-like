@@ -544,6 +544,16 @@ div.backFilm > a > img:hover {
     display: none;
 }
 
+#hello {
+    text-align: center;
+    font-size: 40px;
+}
+
+#imdbMarvel {
+    position: absolute;
+    width: 10%;
+}
+
 
 @media screen and (max-width: 1160px) {
     header {
