@@ -20,8 +20,6 @@ if (issetPostParams("firstname", "lastname", "email", "username", "password", "r
     $bdd->exec($sql);
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "<div> La randonnée a bien été ajoutée !</div>";
-
         echo "<a href='../pages/signIn.php'> Connecte toi ! </a>";
         header("Location: ../pages/signIn.php?success=0");
     }

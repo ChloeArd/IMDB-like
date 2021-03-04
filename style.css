@@ -545,7 +545,6 @@ div.backFilm > a > img:hover {
 }
 
 #hello {
-    text-align: center;
     font-size: 40px;
 }
 
@@ -554,6 +553,27 @@ div.backFilm > a > img:hover {
     width: 10%;
 }
 
+.userMain {
+    align-items: center;
+    justify-content: center;
+}
+
+.borderGrey {
+    font-size: 17px;
+    border: 0.2px solid #555555;
+    padding: 10px;
+}
+
+#disconnection {
+    background-color: transparent;
+    border: none;
+}
+
+#informationsUser {
+    text-align: center;
+    color: grey;
+    background-color: #555555;
+}
 
 @media screen and (max-width: 1160px) {
     header {
