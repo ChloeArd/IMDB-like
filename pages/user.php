@@ -8,6 +8,8 @@ if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
 ?>
     <main class="flexColumn userMain">
         <h1 id="hello"> Hello, <?=$_SESSION['firstname'] . ' ' . $_SESSION['lastname'] ?> !</h1>
+        <img id="circle" src="https://cdn.discordapp.com/attachments/689017273050202134/817310679643455508/unknown.png" alt="HelloGroot">
+        <a class="userMain size15" href="../pages/home.php"> Let's go to the home !!</a>
 
         <div id="allInformationsUser">
             <h2>Account</h2>
@@ -17,6 +19,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
             <div class="borderGrey flexRow"><?=$_SESSION['username']?><a href="../CRUD/updateUser.php?id=<?= $_SESSION['id']?>"><i class="fas fa-user-edit"></i></a></div>
             <div class="borderGrey flexRow"><?=$_SESSION['email']?><a href="../CRUD/updateUser.php?id=<?= $_SESSION['id']?>"><i class="fas fa-user-edit"></i></a></div>
             <div class="borderGrey flexRow"> Password : *******<a href="../CRUD/updateUser.php?id=<?= $_SESSION['id']?>"><i class="fas fa-user-edit"></i></a></div>
+            <div class="borderGrey flexRow"><a class="linkBlue" href="signUp.php">Create a new account</a></div>
             <div class="borderGrey flexRow">
                 <form action="../public/logout.php" method="post">
                     <button class="linkBlue" id="disconnection" type="submit" name="button">Disconnection</button>
