@@ -1,6 +1,6 @@
 <header>
 
-    <!-- Menu responsive -->
+    <!-- responsive menu-->
     <a href="#" id="menuResponsive"><i class="fas fa-bars"></i></a>
     <div id="menuResponsive2" class="flexColumn">
         <div class="flexRow" id="topMenu">
@@ -44,7 +44,7 @@
     <a href="../pages/contact.php"><i class="fas fa-phone"></i> Contact</a>
 </header>
 
-<!-- Fenetre modale -->
+<!-- modal window -->
 <div id="modal">
     <div id="top" class="flexRow">
         <a href="../pages/home.php"><img id="logo_IMDb2" src="https://cdn.discordapp.com/attachments/689017273050202134/813127452494397440/logo_small.png" alt="logo IMDb"></a>
