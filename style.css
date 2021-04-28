@@ -728,4 +728,7 @@ div.backFilm > a > img:hover {
     #allInformationsUser {
         width: 70%;
     }
+    #send {
+        font-size: 15px;
+    }
 }
