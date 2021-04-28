@@ -15,69 +15,33 @@ closeModal.addEventListener("click", function () {
 let movies = ["Release Calendar", "DVD & Blu-ray Releases", "Top Rated Movies", "Most Popular Movies", "Browse Movies by Genre", "Top Box Office", "Showtimes & Tickets", "In Theaters", "Coming Soon", "Movie News", "India Movie Spotlight"];
 let titleMovies = document.getElementById("movies");
 
-for (let i = 0; i < movies.length; i++) {
-    let linkMovies = document.createElement("a");
-    linkMovies.id = "linkMovies"+[i];
-    linkMovies.innerHTML = movies[i];
-    linkMovies.href = "#";
-    titleMovies.appendChild(linkMovies);
-}
+allMovies(movies, "linkMovies", titleMovies);
+
 
 let tvShows = ["What's on TV & Streaming", "Top Rated Shows", "Most Popular Shows", "Browse TV Shows by Genre", "TV News", "India TV Spotlight"];
 let titleTV = document.getElementById("TVShows");
 
-for (let i = 0; i < tvShows.length; i++) {
-    let link = document.createElement("a");
-    link.id = "linkTVShows"+[i];
-    link.innerHTML = tvShows[i];
-    link.href = "#";
-    titleTV.appendChild(link);
-}
+allMovies(tvShows, "linkTVShows", titleTV);
 
 let awardEvents = ["Oscars", "Best Picture Winners", "Golden Globes", "Emmys", "Black History Month", "STARmeter Awards", "San Diego Comic-Con", "New-York Comic-Con", "Sundance Film Festival", "Toronto Int'l Film Festival", "Awards Central", "Festival Central", "All Events"];
 let titleAE = document.getElementById("awardsEvents");
 
-for (let i = 0; i < awardEvents.length; i++) {
-    let link = document.createElement("a");
-    link.id = "linkAE"+[i];
-    link.innerHTML = awardEvents[i];
-    link.href = "#";
-    titleAE.appendChild(link);
-}
+allMovies(awardEvents, "linkAE", titleAE);
 
 let celebs = ["Born Today", "Most Popular Celebs", "Celebrity News"];
 let titleCelebs = document.getElementById("celebs");
 
-for (let i = 0; i < celebs.length; i++) {
-    let link = document.createElement("a");
-    link.id = "celebs"+[i];
-    link.innerHTML = celebs[i];
-    link.href = "#";
-    titleCelebs.appendChild(link);
-}
+allMovies(celebs, "celebs", titleCelebs);
 
 let watch = ["Watch to Watch", "Latest Trailers", "IMDb Originals", "Imdb Picks", "IMDb Podcasts"];
 let titleWatch = document.getElementById("watch");
 
-for (let i = 0; i < watch.length; i++) {
-    let link = document.createElement("a");
-    link.id = "watch"+[i];
-    link.innerHTML = watch[i];
-    link.href = "#";
-    titleWatch.appendChild(link);
-}
+allMovies(watch, "watch", titleWatch);
 
 let community = ["Help Center", "Contributor Zone", "Polls"];
 let titleCommunity = document.getElementById("community");
 
-for (let i = 0; i < community.length; i++) {
-    let link = document.createElement("a");
-    link.id = "community"+[i];
-    link.innerHTML = community[i];
-    link.href = "#";
-    titleCommunity.appendChild(link);
-}
-
+allMovies(community, "community", titleCommunity);
 
 // Responsive menu
 let modalResponsive = document.getElementById("menuResponsive2");
@@ -95,181 +59,40 @@ document.getElementById("closeMenuResponsive").addEventListener("click", functio
 let movies2 = ["Release Calendar", "Top Rated Movies", "Most Popular Movies", "Top Box Office", "Showtimes & Tickets", "Coming Soon", "Movie News", "India Movie Spotlight"];
 let contenuMovies = document.getElementById("contenuMovies");
 
-for (let i = 0; i < movies2.length; i++) {
-    let link = document.createElement("a");
-    link.innerHTML = movies2[i];
-    link.style.width = "100%";
-    link.style.padding = "10px 0";
-    link.href = "#";
-    contenuMovies.appendChild(link);
-}
-
-let nbClick0 = 0;
-$("#moviesResponsive").click( function () {
-    if (nbClick0 === 0) {
-        $("#contenuMovies").css("display", "flex");
-        $("#moviesResponsive").css("color", "#E62A04");
-        $("#arrow-top").html("<i class=\"fas fa-angle-up\"></i>");
-        nbClick0++;
-    }
-    else {
-        $("#contenuMovies").css("display", "none");
-        $("#moviesResponsive").css("color", "white");
-        $("#arrow-top").html("<i class=\"fas fa-angle-down\"></i>");
-        nbClick0 = 0;
-    }
-});
-
+allMovies2(movies2, contenuMovies);
+display2("#moviesResponsive", "#contenuMovies", "#moviesResponsive", "#arrow-top");
 
 let tvShows2 = ["What's on TV & Streaming", "Top Rated Shows", "Most Popular Shows", "TV News", "India TV Spotlight"];
 let contenuTvShows = document.getElementById("contenuTvShows");
 
-for (let i = 0; i < tvShows2.length; i++) {
-    let link = document.createElement("a");
-    link.innerHTML = tvShows2[i];
-    link.style.width = "100%";
-    link.style.padding = "10px 0";
-    link.href = "#";
-    contenuTvShows.appendChild(link);
-}
-
-let nbClick01 = 0;
-
-$("#tvShowsResponsive").click( function () {
-    if (nbClick01 === 0) {
-        $("#contenuTvShows").css("display", "flex");
-        $("#tvShowsResponsive").css("color", "#E62A04");
-        $("#arrow-top2").html("<i class=\"fas fa-angle-up\"></i>");
-        nbClick01++;
-    }
-    else {
-        $("#contenuTvShows").css("display", "none");
-        $("#tvShowsResponsive").css("color", "white");
-        $("#arrow-top2").html("<i class=\"fas fa-angle-down\"></i>");
-        nbClick01 = 0;
-    }
-});
+allMovies2(tvShows2, contenuTvShows);
+display2("#tvShowsResponsive", "#contenuTvShows", "#tvShowsResponsive", "#arrow-top2");
 
 let watch2 = ["Watch to Watch", "Latest Trailers", "IMDb Originals", "Imdb Picks", "IMDb Podcasts"];
 let contenuWatch = document.getElementById("contenuWatch");
 
-for (let i = 0; i < watch2.length; i++) {
-    let link = document.createElement("a");
-    link.innerHTML = watch2[i];
-    link.style.width = "100%";
-    link.style.padding = "10px 0";
-    link.href = "#";
-    contenuWatch.appendChild(link);
-}
-
-let nbClick02 = 0;
-
-$("#watchResponsive").click( function () {
-    if (nbClick02 === 0) {
-        $("#contenuWatch").css("display", "flex");
-        $("#watchResponsive").css("color", "#E62A04");
-        $("#arrow-top3").html("<i class=\"fas fa-angle-up\"></i>");
-        nbClick02++;
-    }
-    else {
-        $("#contenuWatch").css("display", "none");
-        $("#watchResponsive").css("color", "white");
-        $("#arrow-top3").html("<i class=\"fas fa-angle-down\"></i>");
-        nbClick02 = 0;
-    }
-});
+allMovies2(watch2, contenuWatch);
+display2("#watchResponsive", "#contenuWatch", "#watchResponsive", "#arrow-top3");
 
 let awardEvents2 = ["Oscars", "Best Picture Winners", "Golden Globes", "Emmys", "Black History Month", "STARmeter Awards", "San Diego Comic-Con", "New-York Comic-Con", "Sundance Film Festival", "Toronto Int'l Film Festival", "Awards Central", "Festival Central", "All Events"];
 let contenuAwards = document.getElementById("contenuAwards");
 
-for (let i = 0; i < awardEvents2.length; i++) {
-    let link = document.createElement("a");
-    link.innerHTML = awardEvents2[i];
-    link.style.width = "100%";
-    link.style.padding = "10px 0";
-    link.href = "#";
-    contenuAwards.appendChild(link);
-}
-
-let nbClick03 = 0;
-
-$("#awardsEventsResponsive").click( function () {
-    if (nbClick03 === 0) {
-        $("#contenuAwards").css("display", "flex");
-        $("#awardsEventsResponsive").css("color", "#E62A04");
-        $("#arrow-top4").html("<i class=\"fas fa-angle-up\"></i>");
-        nbClick03++;
-    }
-    else {
-        $("#contenuAwards").css("display", "none");
-        $("#awardsEventsResponsive").css("color", "white");
-        $("#arrow-top4").html("<i class=\"fas fa-angle-down\"></i>");
-        nbClick03 = 0;
-    }
-});
+allMovies2(awardEvents2, contenuAwards);
+display2("#awardsEventsResponsive", "#contenuAwards", "#awardsEventResponsive", "#arrow-top4");
 
 let celebs2 = ["Born Today", "Most Popular Celebs", "Celebrity News"];
 let contenuCelebs = document.getElementById("contenuCelebs");
 
-for (let i = 0; i < celebs2.length; i++) {
-    let link = document.createElement("a");
-    link.innerHTML = celebs2[i];
-    link.style.width = "100%";
-    link.style.padding = "10px 0";
-    link.href = "#";
-    contenuCelebs.appendChild(link);
-}
-
-let nbClick04 = 0;
-
-$("#celebsResponsive").click( function () {
-    if (nbClick04 === 0) {
-        $("#contenuCelebs").css("display", "flex");
-        $("#celebsResponsive").css("color", "#E62A04");
-        $("#arrow-top5").html("<i class=\"fas fa-angle-up\"></i>");
-        nbClick04++;
-    }
-    else {
-        $("#contenuCelebs").css("display", "none");
-        $("#celebsResponsive").css("color", "white");
-        $("#arrow-top5").html("<i class=\"fas fa-angle-down\"></i>");
-        nbClick04 = 0;
-    }
-});
+allMovies2(celebs2, contenuCelebs);
+display2("#CelebsResponsive", "#contenuCelebs", "#celebsResponsive", "#arrow-top5");
 
 let community2 = ["Help Center", "Contributor Zone", "Polls"];
 let contenuCommunity = document.getElementById("contenuCommunity");
 
-for (let i = 0; i < community2.length; i++) {
-    let link = document.createElement("a");
-    link.innerHTML = community2[i];
-    link.style.width = "100%";
-    link.style.padding = "10px 0";
-    link.href = "#";
-    contenuCommunity.appendChild(link);
-}
+allMovies2(community2, contenuCommunity);
+display2("#communityResponsive", "#contenuCommunity", "#communityResponsive", "#arrow-top6");
 
-let nbClick05 = 0;
-
-$("#communityResponsive").click( function () {
-    if (nbClick05 === 0) {
-        $("#contenuCommunity").css("display", "flex");
-        $("#communityResponsive").css("color", "#E62A04");
-        $("#arrow-top6").html("<i class=\"fas fa-angle-up\"></i>");
-        nbClick05++;
-    }
-    else {
-        $("#contenuCommunity").css("display", "none");
-        $("#communityResponsive").css("color", "white");
-        $("#arrow-top6").html("<i class=\"fas fa-angle-down\"></i>");
-        nbClick05 = 0;
-    }
-});
-
-
-
-
-// Top picks, utiliser Jquery
+// Top picks
 let filmsTopPicks = [
     {"imageSrc" : "https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersinfinitywar_lob_crd_02_1.jpg", "trailer" : "https://www.youtube.com/watch?v=6ZfuNTqbHE8", "star" : 4.4, "title" : "Avengers : Infinity War (2018)"},
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.dXkLdHXowR5VL8j6DdCwFAHaK9&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=TcMBFSGVi1c", "star" : 4.2, "title" : "Avengers : Endgame"},
@@ -290,19 +113,7 @@ for (let i = 0; i < filmsTopPicks.length; i++) {
     );
 }
 
-//Allows you to make the container appear or disappear, containing the films
-let nbClick = 0;
-$("#topPicks1").click(function () {
-    if (nbClick === 0) {
-        $("#containerTopPicks").css("display", "none");
-        nbClick++;
-    }
-    else {
-        $("#containerTopPicks").css("display", "flex");
-        nbClick = 0;
-    }
-});
-
+display("#topPicks1", "#containerTopPicks");
 
 // Chronological movies marvel
 let chronology = [
@@ -333,29 +144,8 @@ let chronology = [
 
 ];
 
-for (let i = 0; i < chronology.length; i++) {
-    let number = i + 1;
-    $("#containerChronology").append(
-        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
-            "<a href='" + chronology[i].trailer + "' class='images'><img class='imageFilmTopPicks' src='"+ chronology[i].imageSrc +"'></a>" +
-            "<span class='number'>" + number + "</span>" +
-            "<a href='" + chronology[i].trailer + "' class='title'>" + chronology[i].title + "</a>" +
-            "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
-        "</div>"
-    );
-}
-
-let nbClick2 = 0;
-$("#avengers").click(function () {
-    if (nbClick2 === 0) {
-        $("#containerChronology").css("display", "none");
-        nbClick2++;
-    }
-    else {
-        $("#containerChronology").css("display", "flex");
-        nbClick2 = 0;
-    }
-});
+containerChronoligicalMovie(chronology, "#containerChronology");
+display("#avengers", "#containerChronology");
 
 let chronologyXmen = [
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.RwsWbtBY6uBQS1cSr0be-AAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=kyQKi5-k0UU", "title" : "X-Men : First Class  (2011)"},
@@ -365,37 +155,16 @@ let chronologyXmen = [
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.C875m7convYZR5L1-UMFegHaKj&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=ZQ0v5dXbw7M", "title" : "X-Men : The last stand (2006)"},
     {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.w3DYONspOd7QVqdWEAMZmQHaKj&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=g7kdUy5_WlI", "title" : "The Wolverine (2013)"},
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.I4wpWLxu2P-jep1I4Th8KwHaJ3&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=pK2zYHWDZKo", "title" : "X-Men : Days of Future Past (2014)"},
-    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.H4Gc8G4mlyjj5xJagqITjQHaKj&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=COvnHv42T-A", "title" : "X-Men : Apocalypse (2016)"},
+    {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.0Qhiu1IFBIzWc5eIDPtPRAHaKj&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=COvnHv42T-A", "title" : "X-Men : Apocalypse (2016)"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.i6PaHWEJYYMxYhpunHVGXgHaKz&pid=Api&P=0&w=300&h=300", "trailer": "https://www.youtube.com/watch?v=1-q8C_c-nlM", "title" : "X-Men : Dark Phoenix (2019)"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.ng61IWqtUV9bxuw7P78QJwAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=gtTfd6tISfw", "title" : "Deadpool (2016)"},
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.ND-EK9l01qVW9PuV5u4eDAHaK8&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=D86RtevtfrA", "title" : "Deadpool 2 (2018)"},
-    {"imageSrc" : "https://tse2.explicit.bing.net/th?id=OIP.JkRh8cW8DxZmcCZUbukx5QHaLG&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=Div0iP65aZo", "title" : "Logan (2017)"},
+    {"imageSrc" : "https://tse2.mm.bing.net/th?id=OIP.sY_u6_v2ijoLV9G0NPv1BwHaLI&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=Div0iP65aZo", "title" : "Logan (2017)"},
     {"imageSrc" : "https://tse1.mm.bing.net/th?id=OIP.lao4-o4Si6QeTRnDrYtbHQAAAA&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=W_vJhUAOFpI", "title" : "The New Mutants (2020)"},
 ];
 
-for (let i = 0; i < chronologyXmen.length; i++) {
-    let number = i + 1;
-    $("#containerXmen").append(
-        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
-        "<a href='" + chronologyXmen[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronologyXmen[i].imageSrc +"'></a>" +
-        "<span class='number'>" + number + "</span>" +
-        "<a href='" + chronologyXmen[i].trailer + "' class='title'>" + chronologyXmen[i].title + "</a>" +
-        "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
-        "</div>"
-    );
-}
-
-let nbClick3 = 0;
-$("#xMen").click(function () {
-    if (nbClick3 === 0) {
-            $("#containerXmen").css("display", "none");
-        nbClick3++;
-    }
-    else {
-        $("#containerXmen").css("display", "flex");
-        nbClick3 = 0;
-    }
-});
+containerChronoligicalMovie(chronologyXmen, "#containerXmen");
+display("#xMen", "#containerXmen");
 
 // Fantastic 4
 let chronologyFantastic = [
@@ -404,29 +173,8 @@ let chronologyFantastic = [
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.SMF6w_BkUX1fy682L9WGrgHaLK&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=_rRoD28-WgU", "title" : "Fantastic Four (2015)"},
 ];
 
-for (let i = 0; i < chronologyFantastic.length; i++){
-    let number = i + 1;
-    $("#containerFantastic").append(
-        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
-        "<a href='" + chronologyFantastic[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronologyFantastic[i].imageSrc +"'></a>" +
-        "<span class='number'>" + number + "</span>" +
-        "<a href='" + chronologyFantastic[i].trailer + "' class='title'>" + chronologyFantastic[i].title + "</a>" +
-        "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
-        "</div>"
-    );
-}
-
-let nbClick4 = 0;
-$("#fantastic4").click(function () {
-    if (nbClick4 === 0) {
-        $("#containerFantastic").css("display", "none");
-        nbClick4++;
-    }
-    else {
-        $("#containerFantastic").css("display", "flex");
-        nbClick4 = 0;
-    }
-});
+containerChronoligicalMovie(chronologyFantastic, "#containerFantastic");
+display("#fantastic4", "#containerFantastic");
 
 // Spider-Man
 let chronologySpiderMan = [
@@ -435,29 +183,8 @@ let chronologySpiderMan = [
     {"imageSrc" : "https://tse3.mm.bing.net/th?id=OIP.E9cK3MLj_0FbnltKBT1hwQHaLH&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=wPosLpgMtTY", "title" : "Spider-Man 3 (2007)"},
 ];
 
-for (let i = 0; i < chronologySpiderMan.length; i++) {
-    let number = i + 1;
-    $("#containerSpiderMan").append(
-        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
-        "<a href='" + chronologySpiderMan[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronologySpiderMan[i].imageSrc +"'></a>" +
-        "<span class='number'>" + number + "</span>" +
-        "<a href='" + chronologySpiderMan[i].trailer + "' class='title'>" + chronologySpiderMan[i].title + "</a>" +
-        "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
-        "</div>"
-    );
-}
-
-let nbClick5 = 0;
-$("#spiderMan").click(function () {
-    if (nbClick5 === 0) {
-        $("#containerSpiderMan").css("display", "none");
-        nbClick5++;
-    }
-    else {
-        $("#containerSpiderMan").css("display", "flex");
-        nbClick5 = 0;
-    }
-});
+containerChronoligicalMovie(chronologySpiderMan, "#containerSpiderMan");
+display("#spiderMan", "#containerSpiderMan");
 
 // The amazing Spider-Man
 let chronologyAmazingSpiderMan = [
@@ -465,29 +192,8 @@ let chronologyAmazingSpiderMan = [
     {"imageSrc" : "https://tse4.mm.bing.net/th?id=OIP.aCchXBFu_g7hrD_35DnbNQHaLG&pid=Api&P=0&w=300&h=300", "trailer" : "https://www.youtube.com/watch?v=nbp3Ra3Yp74", "title" : "The Amazing Spider-Man 2 (2014)"}
 ];
 
-for (let i = 0; i < chronologyAmazingSpiderMan.length; i++) {
-    let number = i + 1;
-    $("#containerAmazingSpiderMan").append(
-        "<div id='chronology" + [i] + "' class='flexColumn backFilm'>" +
-        "<a href='" + chronologyAmazingSpiderMan[i].trailer + "'><img class='imageFilmTopPicks' src='"+ chronologyAmazingSpiderMan[i].imageSrc +"'></a>" +
-        "<span class='number'>" + number + "</span>" +
-        "<a href='" + chronologyAmazingSpiderMan[i].trailer + "' class='title'>" + chronologyAmazingSpiderMan[i].title + "</a>" +
-        "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
-        "</div>"
-    );
-}
-
-let nbClick6 = 0;
-$("#amazingSpiderMan").click(function () {
-    if (nbClick6 === 0) {
-        $("#containerAmazingSpiderMan").css("display", "none");
-        nbClick6++;
-    }
-    else {
-        $("#containerAmazingSpiderMan").css("display", "flex");
-        nbClick6 = 0;
-    }
-});
+containerChronoligicalMovie(chronologyAmazingSpiderMan, "#containerAmazingSpiderMan");
+display("#amazingSpiderMan", "#containerAmazingSpiderMan");
 
 // All other Marvel movies
 let chronologyMarvelAll = [
@@ -515,17 +221,7 @@ for (let i = 0; i < chronologyMarvelAll.length; i++) {
     );
 }
 
-let nbClick7 = 0;
-$("#marvelAll").click(function () {
-    if (nbClick7 === 0) {
-        $("#containerFilmAll").css("display", "none");
-        nbClick7++;
-    }
-    else {
-        $("#containerFilmAll").css("display", "flex");
-        nbClick7 = 0;
-    }
-});
+display("#marvelAll", "#containerFilmAll");
 
 // Coming Soon to theaters
 let comingSoon = [
@@ -565,6 +261,77 @@ function checkPassword() {
     else {
         passwordConfirm.setCustomValidity("");
     }
+}
+
+// add all the values of the array related to an id after its parent
+function allMovies(movies, id, parent) {
+    for (let i = 0; i < movies.length; i++) {
+        let linkMovies = document.createElement("a");
+        linkMovies.id = id+[i];
+        linkMovies.innerHTML = movies[i];
+        linkMovies.href = "#";
+        parent.appendChild(linkMovies);
+    }
+}
+
+function allMovies2 (movies, parent){
+    for (let i = 0; i < movies.length; i++) {
+        let link = document.createElement("a");
+        link.innerHTML = movies[i];
+        link.style.width = "100%";
+        link.style.padding = "10px 0";
+        link.href = "#";
+        parent.appendChild(link);
+    }
+}
+
+// add films in chronological order
+function containerChronoligicalMovie (movies, parent) {
+    for (let i = 0; i < movies.length; i++) {
+        let number = i + 1;
+        $(parent).append(
+            "<div id='chronology "+ [i] + "' class='flexColumn backFilm'>" +
+            "<a href='" + movies[i].trailer + "' class='images'><img class='imageFilmTopPicks' src='"+ movies[i].imageSrc +"'></a>" +
+            "<span class='number'>" + number + "</span>" +
+            "<a href='" + movies[i].trailer + "' class='title'>" + movies[i].title + "</a>" +
+            "<a href='#' class='watchList'><i class=\"fas fa-plus-circle\"></i> Watchlist</a> "+
+            "</div>"
+        );
+    }
+}
+
+//Allows you to make the container appear or disappear, containing the films
+function display (idClick, id) {
+    let nbClick = 0;
+    $(idClick).click(function () {
+        if (nbClick === 0) {
+            $(id).css("display", "none");
+            nbClick++;
+        }
+        else {
+            $(id).css("display", "flex");
+            nbClick = 0;
+        }
+    });
+}
+
+// when you click on one of the links in the menu, you have its submenus that appear
+function display2 (idClick, id1, id2, id3) {
+    let nbClick = 0;
+    $(idClick).click( function () {
+        if (nbClick === 0) {
+            $(id1).css("display", "flex");
+            $(id2).css("color", "#E62A04");
+            $(id3).html("<i class=\"fas fa-angle-up\"></i>");
+            nbClick++;
+        }
+        else {
+            $(id1).css("display", "none");
+            $(id2).css("color", "white");
+            $(id3).html("<i class=\"fas fa-angle-down\"></i>");
+            nbClick = 0;
+        }
+    });
 }
 
 password.addEventListener("change", checkPassword);

@@ -412,7 +412,7 @@ label {
     margin: 8px 0;
 }
 
-#spiderHelp {
+#spiderHelp{
     width: 100%;
 }
 
@@ -568,6 +568,9 @@ div.backFilm > a > img:hover {
     background-color: transparent;
     border: none;
 }
+.formDisconnection {
+    padding: 0;
+}
 
 #informationsUser {
     text-align: center;
@@ -584,6 +587,11 @@ div.backFilm > a > img:hover {
     width: 150px;
     height: 150px;
     margin: 10px 0;
+}
+
+#goHome {
+    width: initial;
+    color: mediumpurple;
 }
 
 @media screen and (max-width: 1160px) {

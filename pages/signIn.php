@@ -11,7 +11,7 @@ include "../_partials/header.php";
         <form method="post" action="../public/check_login.php" class="flexColumn formAccount">
             <label for="username" class="colorGrey" ><i class="fas fa-user"></i>Username :</label>
             <input type="text" name="username" id="usernameSignIn" class="colorRed" required>
-            <label for="passwordSignIn" class="colorGrey" ><i class="fas fa-lock"></i>Password :</label>
+            <label for="passwordSignIn" class="colorGrey" ><i class="fas fa-lock"></i>Password : <a class="linkBlue" href="forgotPassword.php"> Forgot your password ?</a></label>
             <input type="password" name="password" id="passwordSignIn" class="colorRed" required>
             <input id="signIn2" type="submit" value="Sign in" class="colorWhite buttonRed">
         </form>

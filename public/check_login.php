@@ -19,7 +19,6 @@ if (issetPostParams('username', 'password')) {
         if (password_verify($password, $user['password'])) {
             // Si les 2 mdp correspondent alors on ouvre la session et on stocke les données de l'utilisateur dans une session.
             session_start();
-            $_SESSION['id'] = $user['id'];
             $_SESSION['username'] = $username;
             $_SESSION['password'] = $password;
             $_SESSION['email'] = $user['email'];
